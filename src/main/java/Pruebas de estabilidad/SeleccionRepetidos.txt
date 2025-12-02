@@ -1,0 +1,501 @@
+--- MUESTRA DEL ARREGLO ORDENADO ---
+[  1] PAC-0003;Castillo;1
+[  2] PAC-0011;Castillo;2
+[  3] PAC-0053;Castillo;3
+[  4] PAC-0054;Castillo;2
+[  5] PAC-0146;Castillo;3
+[  6] PAC-0165;Castillo;3
+[  7] PAC-0199;Castillo;3
+[  8] PAC-0213;Castillo;2
+[  9] PAC-0229;Castillo;1
+[ 10] PAC-0231;Castillo;2
+[ 11] PAC-0232;Castillo;2
+[ 12] PAC-0279;Castillo;3
+[ 13] PAC-0307;Castillo;1
+[ 14] PAC-0310;Castillo;3
+[ 15] PAC-0320;Castillo;1
+[ 16] PAC-0344;Castillo;3
+[ 17] PAC-0345;Castillo;2
+[ 18] PAC-0356;Castillo;1
+[ 19] PAC-0373;Castillo;2
+[ 20] PAC-0375;Castillo;3
+[ 21] PAC-0391;Castillo;2
+[ 22] PAC-0406;Castillo;2
+[ 23] PAC-0436;Castillo;2
+[ 24] PAC-0478;Castillo;1
+[ 25] PAC-0034;Espinoza;1
+[ 26] PAC-0050;Espinoza;2
+[ 27] PAC-0060;Espinoza;1
+[ 28] PAC-0061;Espinoza;1
+[ 29] PAC-0064;Espinoza;1
+[ 30] PAC-0095;Espinoza;1
+[ 31] PAC-0097;Espinoza;3
+[ 32] PAC-0099;Espinoza;1
+[ 33] PAC-0142;Espinoza;1
+[ 34] PAC-0192;Espinoza;2
+[ 35] PAC-0203;Espinoza;1
+[ 36] PAC-0205;Espinoza;3
+[ 37] PAC-0211;Espinoza;2
+[ 38] PAC-0218;Espinoza;2
+[ 39] PAC-0221;Espinoza;3
+[ 40] PAC-0288;Espinoza;1
+[ 41] PAC-0289;Espinoza;2
+[ 42] PAC-0318;Espinoza;1
+[ 43] PAC-0323;Espinoza;1
+[ 44] PAC-0333;Espinoza;3
+[ 45] PAC-0339;Espinoza;1
+[ 46] PAC-0351;Espinoza;2
+[ 47] PAC-0378;Espinoza;2
+[ 48] PAC-0379;Espinoza;3
+[ 49] PAC-0381;Espinoza;3
+[ 50] PAC-0382;Espinoza;2
+[ 51] PAC-0385;Espinoza;1
+[ 52] PAC-0387;Espinoza;3
+[ 53] PAC-0388;Espinoza;1
+[ 54] PAC-0392;Espinoza;1
+[ 55] PAC-0412;Espinoza;1
+[ 56] PAC-0421;Espinoza;2
+[ 57] PAC-0430;Espinoza;3
+[ 58] PAC-0450;Espinoza;1
+[ 59] PAC-0452;Espinoza;1
+[ 60] PAC-0479;Espinoza;3
+[ 61] PAC-0482;Espinoza;2
+[ 62] PAC-0486;Espinoza;1
+[ 63] PAC-0115;Fernandez;1
+[ 64] PAC-0122;Fernandez;3
+[ 65] PAC-0144;Fernandez;3
+[ 66] PAC-0168;Fernandez;3
+[ 67] PAC-0184;Fernandez;1
+[ 68] PAC-0206;Fernandez;3
+[ 69] PAC-0038;Fernandez;1
+[ 70] PAC-0234;Fernandez;3
+[ 71] PAC-0242;Fernandez;2
+[ 72] PAC-0255;Fernandez;1
+[ 73] PAC-0306;Fernandez;1
+[ 74] PAC-0013;Fernandez;1
+[ 75] PAC-0309;Fernandez;3
+[ 76] PAC-0337;Fernandez;1
+[ 77] PAC-0018;Fernandez;1
+[ 78] PAC-0361;Fernandez;2
+[ 79] PAC-0055;Fernandez;2
+[ 80] PAC-0413;Fernandez;2
+[ 81] PAC-0422;Fernandez;3
+[ 82] PAC-0023;Fernandez;2
+[ 83] PAC-0467;Fernandez;1
+[ 84] PAC-0475;Fernandez;2
+[ 85] PAC-0028;Fernandez;1
+[ 86] PAC-0487;Fernandez;2
+[ 87] PAC-0490;Fernandez;1
+[ 88] PAC-0094;Garcia;1
+[ 89] PAC-0102;Garcia;3
+[ 90] PAC-0116;Garcia;3
+[ 91] PAC-0120;Garcia;2
+[ 92] PAC-0158;Garcia;1
+[ 93] PAC-0170;Garcia;1
+[ 94] PAC-0177;Garcia;1
+[ 95] PAC-0178;Garcia;2
+[ 96] PAC-0182;Garcia;2
+[ 97] PAC-0188;Garcia;3
+[ 98] PAC-0209;Garcia;3
+[ 99] PAC-0216;Garcia;2
+[100] PAC-0223;Garcia;2
+[101] PAC-0010;Garcia;1
+[102] PAC-0072;Garcia;2
+[103] PAC-0280;Garcia;1
+[104] PAC-0303;Garcia;3
+[105] PAC-0326;Garcia;2
+[106] PAC-0340;Garcia;3
+[107] PAC-0367;Garcia;3
+[108] PAC-0372;Garcia;2
+[109] PAC-0380;Garcia;2
+[110] PAC-0455;Garcia;2
+[111] PAC-0476;Garcia;2
+[112] PAC-0086;Garcia;3
+[113] PAC-0497;Garcia;2
+[114] PAC-0121;Gomez;1
+[115] PAC-0125;Gomez;2
+[116] PAC-0160;Gomez;1
+[117] PAC-0172;Gomez;2
+[118] PAC-0174;Gomez;3
+[119] PAC-0008;Gomez;2
+[120] PAC-0230;Gomez;3
+[121] PAC-0233;Gomez;1
+[122] PAC-0241;Gomez;2
+[123] PAC-0250;Gomez;3
+[124] PAC-0257;Gomez;3
+[125] PAC-0260;Gomez;2
+[126] PAC-0327;Gomez;2
+[127] PAC-0377;Gomez;3
+[128] PAC-0051;Gomez;2
+[129] PAC-0389;Gomez;2
+[130] PAC-0395;Gomez;2
+[131] PAC-0396;Gomez;1
+[132] PAC-0022;Gomez;3
+[133] PAC-0428;Gomez;3
+[134] PAC-0024;Gomez;2
+[135] PAC-0480;Gomez;1
+[136] PAC-0112;Gomez;2
+[137] PAC-0491;Gomez;3
+[138] PAC-0139;Guerrero;2
+[139] PAC-0088;Guerrero;3
+[140] PAC-0179;Guerrero;2
+[141] PAC-0191;Guerrero;1
+[142] PAC-0035;Guerrero;2
+[143] PAC-0204;Guerrero;1
+[144] PAC-0068;Guerrero;1
+[145] PAC-0208;Guerrero;2
+[146] PAC-0037;Guerrero;3
+[147] PAC-0100;Guerrero;1
+[148] PAC-0224;Guerrero;1
+[149] PAC-0243;Guerrero;2
+[150] PAC-0247;Guerrero;1
+[151] PAC-0258;Guerrero;1
+[152] PAC-0265;Guerrero;1
+[153] PAC-0040;Guerrero;2
+[154] PAC-0292;Guerrero;1
+[155] PAC-0317;Guerrero;2
+[156] PAC-0325;Guerrero;3
+[157] PAC-0400;Guerrero;2
+[158] PAC-0439;Guerrero;1
+[159] PAC-0446;Guerrero;2
+[160] PAC-0058;Guerrero;3
+[161] PAC-0059;Guerrero;1
+[162] PAC-0453;Guerrero;3
+[163] PAC-0468;Guerrero;3
+[164] PAC-0481;Guerrero;1
+[165] PAC-0193;Lopez;3
+[166] PAC-0214;Lopez;3
+[167] PAC-0225;Lopez;1
+[168] PAC-0239;Lopez;2
+[169] PAC-0264;Lopez;3
+[170] PAC-0278;Lopez;1
+[171] PAC-0074;Lopez;2
+[172] PAC-0075;Lopez;2
+[173] PAC-0371;Lopez;2
+[174] PAC-0047;Lopez;3
+[175] PAC-0411;Lopez;1
+[176] PAC-0080;Lopez;3
+[177] PAC-0414;Lopez;3
+[178] PAC-0415;Lopez;2
+[179] PAC-0445;Lopez;2
+[180] PAC-0090;Lopez;2
+[181] PAC-0083;Lopez;2
+[182] PAC-0472;Lopez;2
+[183] PAC-0474;Lopez;3
+[184] PAC-0494;Lopez;1
+[185] PAC-0005;Martinez;3
+[186] PAC-0070;Martinez;1
+[187] PAC-0236;Martinez;1
+[188] PAC-0149;Martinez;1
+[189] PAC-0249;Martinez;2
+[190] PAC-0123;Martinez;3
+[191] PAC-0259;Martinez;1
+[192] PAC-0273;Martinez;1
+[193] PAC-0103;Martinez;1
+[194] PAC-0284;Martinez;1
+[195] PAC-0291;Martinez;1
+[196] PAC-0299;Martinez;2
+[197] PAC-0104;Martinez;2
+[198] PAC-0305;Martinez;1
+[199] PAC-0043;Martinez;2
+[200] PAC-0045;Martinez;1
+[201] PAC-0341;Martinez;1
+[202] PAC-0343;Martinez;1
+[203] PAC-0353;Martinez;1
+[204] PAC-0355;Martinez;2
+[205] PAC-0365;Martinez;3
+[206] PAC-0370;Martinez;2
+[207] PAC-0019;Martinez;2
+[208] PAC-0397;Martinez;2
+[209] PAC-0402;Martinez;2
+[210] PAC-0405;Martinez;3
+[211] PAC-0410;Martinez;1
+[212] PAC-0433;Martinez;1
+[213] PAC-0140;Martinez;2
+[214] PAC-0461;Martinez;3
+[215] PAC-0181;Martinez;2
+[216] PAC-0163;Martinez;2
+[217] PAC-0111;Martinez;2
+[218] PAC-0027;Martinez;1
+[219] PAC-0164;Martinez;2
+[220] PAC-0087;Martinez;3
+[221] PAC-0113;Martinez;3
+[222] PAC-0114;Mendoza;2
+[223] PAC-0186;Mendoza;2
+[224] PAC-0235;Mendoza;3
+[225] PAC-0240;Mendoza;3
+[226] PAC-0245;Mendoza;1
+[227] PAC-0248;Mendoza;3
+[228] PAC-0251;Mendoza;3
+[229] PAC-0089;Mendoza;2
+[230] PAC-0266;Mendoza;2
+[231] PAC-0093;Mendoza;3
+[232] PAC-0012;Mendoza;2
+[233] PAC-0006;Mendoza;1
+[234] PAC-0290;Mendoza;2
+[235] PAC-0195;Mendoza;1
+[236] PAC-0296;Mendoza;2
+[237] PAC-0311;Mendoza;1
+[238] PAC-0314;Mendoza;3
+[239] PAC-0315;Mendoza;1
+[240] PAC-0316;Mendoza;1
+[241] PAC-0155;Mendoza;3
+[242] PAC-0042;Mendoza;2
+[243] PAC-0322;Mendoza;3
+[244] PAC-0324;Mendoza;2
+[245] PAC-0328;Mendoza;1
+[246] PAC-0332;Mendoza;3
+[247] PAC-0044;Mendoza;1
+[248] PAC-0106;Mendoza;2
+[249] PAC-0342;Mendoza;3
+[250] PAC-0349;Mendoza;3
+[251] PAC-0020;Mendoza;1
+[252] PAC-0048;Mendoza;1
+[253] PAC-0129;Mendoza;2
+[254] PAC-0130;Mendoza;2
+[255] PAC-0210;Mendoza;2
+[256] PAC-0132;Mendoza;3
+[257] PAC-0418;Mendoza;3
+[258] PAC-0420;Mendoza;3
+[259] PAC-0425;Mendoza;2
+[260] PAC-0215;Mendoza;3
+[261] PAC-0489;Mendoza;1
+[262] PAC-0495;Mendoza;2
+[263] PAC-0271;Perez;3
+[264] PAC-0025;Perez;2
+[265] PAC-0222;Perez;3
+[266] PAC-0301;Perez;3
+[267] PAC-0302;Perez;3
+[268] PAC-0073;Perez;3
+[269] PAC-0171;Perez;3
+[270] PAC-0071;Perez;3
+[271] PAC-0244;Perez;2
+[272] PAC-0329;Perez;3
+[273] PAC-0150;Perez;2
+[274] PAC-0334;Perez;2
+[275] PAC-0336;Perez;2
+[276] PAC-0358;Perez;3
+[277] PAC-0366;Perez;2
+[278] PAC-0065;Perez;1
+[279] PAC-0108;Perez;3
+[280] PAC-0376;Perez;3
+[281] PAC-0383;Perez;2
+[282] PAC-0384;Perez;3
+[283] PAC-0253;Perez;2
+[284] PAC-0021;Perez;1
+[285] PAC-0393;Perez;2
+[286] PAC-0176;Perez;3
+[287] PAC-0417;Perez;2
+[288] PAC-0081;Perez;1
+[289] PAC-0429;Perez;1
+[290] PAC-0057;Perez;1
+[291] PAC-0431;Perez;2
+[292] PAC-0434;Perez;1
+[293] PAC-0435;Perez;1
+[294] PAC-0437;Perez;2
+[295] PAC-0180;Perez;3
+[296] PAC-0451;Perez;3
+[297] PAC-0458;Perez;3
+[298] PAC-0166;Perez;2
+[299] PAC-0463;Perez;2
+[300] PAC-0469;Perez;2
+[301] PAC-0096;Perez;2
+[302] PAC-0477;Perez;1
+[303] PAC-0496;Perez;1
+[304] PAC-0014;Rios;3
+[305] PAC-0031;Rios;2
+[306] PAC-0156;Rios;2
+[307] PAC-0105;Rios;3
+[308] PAC-0126;Rios;2
+[309] PAC-0272;Rios;1
+[310] PAC-0331;Rios;2
+[311] PAC-0338;Rios;3
+[312] PAC-0200;Rios;3
+[313] PAC-0189;Rios;1
+[314] PAC-0033;Rios;1
+[315] PAC-0354;Rios;1
+[316] PAC-0143;Rios;2
+[317] PAC-0359;Rios;2
+[318] PAC-0228;Rios;2
+[319] PAC-0152;Rios;1
+[320] PAC-0049;Rios;1
+[321] PAC-0386;Rios;2
+[322] PAC-0286;Rios;2
+[323] PAC-0416;Rios;2
+[324] PAC-0124;Rios;2
+[325] PAC-0151;Rios;3
+[326] PAC-0427;Rios;1
+[327] PAC-0147;Rios;1
+[328] PAC-0432;Rios;1
+[329] PAC-0092;Rios;3
+[330] PAC-0297;Rios;2
+[331] PAC-0459;Rios;2
+[332] PAC-0460;Rios;2
+[333] PAC-0462;Rios;1
+[334] PAC-0464;Rios;2
+[335] PAC-0217;Rios;3
+[336] PAC-0485;Rios;1
+[337] PAC-0039;Rios;1
+[338] PAC-0201;Rodriguez;1
+[339] PAC-0077;Rodriguez;2
+[340] PAC-0360;Rodriguez;1
+[341] PAC-0374;Rodriguez;3
+[342] PAC-0252;Rodriguez;2
+[343] PAC-0254;Rodriguez;1
+[344] PAC-0145;Rodriguez;1
+[345] PAC-0157;Rodriguez;2
+[346] PAC-0409;Rodriguez;1
+[347] PAC-0185;Rodriguez;1
+[348] PAC-0030;Rodriguez;1
+[349] PAC-0287;Rodriguez;1
+[350] PAC-0268;Rodriguez;3
+[351] PAC-0424;Rodriguez;2
+[352] PAC-0426;Rodriguez;3
+[353] PAC-0133;Rodriguez;2
+[354] PAC-0154;Rodriguez;2
+[355] PAC-0441;Rodriguez;1
+[356] PAC-0443;Rodriguez;1
+[357] PAC-0159;Rodriguez;2
+[358] PAC-0161;Rodriguez;3
+[359] PAC-0473;Rodriguez;2
+[360] PAC-0267;Rodriguez;2
+[361] PAC-0134;Rodriguez;3
+[362] PAC-0492;Rodriguez;2
+[363] PAC-0493;Rodriguez;2
+[364] PAC-0500;Rodriguez;3
+[365] PAC-0107;Romero;2
+[366] PAC-0368;Romero;2
+[367] PAC-0173;Romero;3
+[368] PAC-0109;Romero;1
+[369] PAC-0399;Romero;1
+[370] PAC-0401;Romero;2
+[371] PAC-0407;Romero;2
+[372] PAC-0408;Romero;3
+[373] PAC-0347;Romero;2
+[374] PAC-0419;Romero;3
+[375] PAC-0352;Romero;3
+[376] PAC-0212;Romero;2
+[377] PAC-0438;Romero;3
+[378] PAC-0117;Romero;2
+[379] PAC-0119;Romero;1
+[380] PAC-0295;Romero;2
+[381] PAC-0110;Romero;3
+[382] PAC-0169;Romero;2
+[383] PAC-0274;Romero;2
+[384] PAC-0300;Romero;2
+[385] PAC-0335;Romero;3
+[386] PAC-0219;Romero;3
+[387] PAC-0085;Romero;2
+[388] PAC-0062;Romero;2
+[389] PAC-0488;Romero;1
+[390] PAC-0137;Romero;2
+[391] PAC-0362;Romero;3
+[392] PAC-0067;Romero;3
+[393] PAC-0076;Romero;1
+[394] PAC-0498;Romero;3
+[395] PAC-0499;Romero;3
+[396] PAC-0403;Silva;1
+[397] PAC-0404;Silva;3
+[398] PAC-0009;Silva;1
+[399] PAC-0175;Silva;1
+[400] PAC-0198;Silva;2
+[401] PAC-0263;Silva;3
+[402] PAC-0237;Silva;1
+[403] PAC-0141;Silva;1
+[404] PAC-0270;Silva;1
+[405] PAC-0238;Silva;2
+[406] PAC-0308;Silva;2
+[407] PAC-0148;Silva;2
+[408] PAC-0442;Silva;3
+[409] PAC-0444;Silva;1
+[410] PAC-0448;Silva;1
+[411] PAC-0449;Silva;2
+[412] PAC-0276;Silva;2
+[413] PAC-0457;Silva;3
+[414] PAC-0246;Silva;2
+[415] PAC-0465;Silva;2
+[416] PAC-0063;Silva;3
+[417] PAC-0032;Silva;1
+[418] PAC-0282;Silva;3
+[419] PAC-0091;Silva;2
+[420] PAC-0227;Silva;1
+[421] PAC-0321;Silva;1
+[422] PAC-0052;Silva;2
+[423] PAC-0483;Silva;3
+[424] PAC-0001;Silva;1
+[425] PAC-0283;Silva;2
+[426] PAC-0261;Silva;2
+[427] PAC-0363;Silva;1
+[428] PAC-0394;Silva;1
+[429] PAC-0036;Torres;3
+[430] PAC-0319;Torres;2
+[431] PAC-0293;Torres;1
+[432] PAC-0082;Torres;3
+[433] PAC-0118;Torres;2
+[434] PAC-0440;Torres;3
+[435] PAC-0002;Torres;1
+[436] PAC-0357;Torres;1
+[437] PAC-0369;Torres;2
+[438] PAC-0277;Torres;3
+[439] PAC-0187;Torres;3
+[440] PAC-0079;Torres;1
+[441] PAC-0454;Torres;2
+[442] PAC-0456;Torres;3
+[443] PAC-0017;Torres;3
+[444] PAC-0138;Torres;2
+[445] PAC-0298;Torres;3
+[446] PAC-0466;Torres;3
+[447] PAC-0007;Torres;1
+[448] PAC-0190;Torres;3
+[449] PAC-0101;Torres;3
+[450] PAC-0098;Torres;3
+[451] PAC-0029;Torres;3
+[452] PAC-0350;Torres;2
+[453] PAC-0056;Torres;2
+[454] PAC-0275;Torres;3
+[455] PAC-0046;Torres;2
+[456] PAC-0131;Torres;3
+[457] PAC-0016;Torres;3
+[458] PAC-0220;Torres;3
+[459] PAC-0004;Torres;3
+[460] PAC-0262;Torres;2
+[461] PAC-0197;Torres;2
+[462] PAC-0285;Torres;1
+[463] PAC-0398;Torres;2
+[464] PAC-0281;Vargas;2
+[465] PAC-0348;Vargas;3
+[466] PAC-0226;Vargas;2
+[467] PAC-0447;Vargas;2
+[468] PAC-0207;Vargas;3
+[469] PAC-0294;Vargas;3
+[470] PAC-0470;Vargas;2
+[471] PAC-0471;Vargas;3
+[472] PAC-0127;Vargas;3
+[473] PAC-0256;Vargas;2
+[474] PAC-0183;Vargas;2
+[475] PAC-0084;Vargas;1
+[476] PAC-0128;Vargas;3
+[477] PAC-0066;Vargas;2
+[478] PAC-0078;Vargas;3
+[479] PAC-0069;Vargas;2
+[480] PAC-0135;Vargas;2
+[481] PAC-0162;Vargas;1
+[482] PAC-0153;Vargas;1
+[483] PAC-0423;Vargas;2
+[484] PAC-0484;Vargas;1
+[485] PAC-0167;Vargas;2
+[486] PAC-0015;Vargas;3
+[487] PAC-0136;Vargas;2
+[488] PAC-0041;Vargas;3
+[489] PAC-0312;Vargas;1
+[490] PAC-0330;Vargas;3
+[491] PAC-0390;Vargas;3
+[492] PAC-0194;Vargas;2
+[493] PAC-0269;Vargas;1
+[494] PAC-0304;Vargas;1
+[495] PAC-0346;Vargas;3
+[496] PAC-0313;Vargas;2
+[497] PAC-0026;Vargas;1
+[498] PAC-0196;Vargas;2
+[499] PAC-0202;Vargas;3
+[500] PAC-0364;Vargas;3
