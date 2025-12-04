@@ -1,4 +1,4 @@
-package ed.u2.sorting;
+package sorting;
 
 import util.SortingMetrics;
 

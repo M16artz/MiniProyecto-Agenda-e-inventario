@@ -1,4 +1,4 @@
-package ed.u2.sorting;
+package sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;

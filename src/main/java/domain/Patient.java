@@ -3,7 +3,7 @@ package domain;
 /**
  * @author MikelMZ : Miguel Armas
  */
-public class Paciente implements Comparable<Paciente>{
+public class Patient implements Comparable<Patient>{
     private String id;
     private String lastName;
     private int priority;
@@ -33,7 +33,7 @@ public class Paciente implements Comparable<Paciente>{
     }
 
     @Override
-    public int compareTo(Paciente otro) {
+    public int compareTo(Patient otro) {
         return this.lastName.compareTo(otro.getApellido());
     }
 

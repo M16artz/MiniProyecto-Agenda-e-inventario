@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 /**
  * @author MikelMZ : Miguel Armas
  */
-public class Cita implements Comparable<Cita> {
+public class Appointment implements Comparable<Appointment> {
     private String id;
     private String lastName;
     private LocalDateTime dateHour;
@@ -14,7 +14,7 @@ public class Cita implements Comparable<Cita> {
     // Formateador para parsear el String
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
-    public Cita(String id, String apellido, String fechaHoraStr) {
+    public Appointment(String id, String apellido, String fechaHoraStr) {
         this.id = id;
         this.lastName = apellido;
         this.dateHour = LocalDateTime.parse(fechaHoraStr, FORMATTER);
@@ -25,7 +25,7 @@ public class Cita implements Comparable<Cita> {
     public LocalDateTime getFechaHora() { return dateHour; }
 
     @Override
-    public int compareTo(Cita otra) {
+    public int compareTo(Appointment otra) {
         return this.dateHour.compareTo(otra.getFechaHora());
     }
 

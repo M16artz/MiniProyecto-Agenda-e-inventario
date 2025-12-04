@@ -1,501 +1,501 @@
 id;insumo;stock
-ITEM-0001;Insumo_X24;500
-ITEM-0002;Insumo_P40;499
-ITEM-0003;Insumo_Y84;498
-ITEM-0004;Insumo_R68;497
-ITEM-0005;Insumo_U46;496
-ITEM-0006;Insumo_S47;495
-ITEM-0007;Insumo_P85;494
-ITEM-0008;Insumo_U13;493
-ITEM-0009;Insumo_G5;492
-ITEM-0010;Insumo_D26;491
-ITEM-0011;Insumo_X21;490
-ITEM-0012;Insumo_O55;489
-ITEM-0013;Insumo_W72;488
-ITEM-0014;Insumo_R67;487
-ITEM-0015;Insumo_A77;486
-ITEM-0016;Insumo_I77;485
-ITEM-0017;Insumo_W70;484
-ITEM-0018;Insumo_K40;483
-ITEM-0019;Insumo_X10;482
-ITEM-0020;Insumo_E10;481
-ITEM-0021;Insumo_X43;480
-ITEM-0022;Insumo_T30;479
-ITEM-0023;Insumo_Z31;478
-ITEM-0024;Insumo_W13;477
-ITEM-0025;Insumo_G14;476
-ITEM-0026;Insumo_A84;475
-ITEM-0027;Insumo_E18;474
-ITEM-0028;Insumo_H48;473
-ITEM-0029;Insumo_M42;472
-ITEM-0030;Insumo_Z78;471
-ITEM-0031;Insumo_Q57;470
-ITEM-0032;Insumo_Q98;469
-ITEM-0033;Insumo_R15;468
-ITEM-0034;Insumo_T27;467
-ITEM-0035;Insumo_F67;466
-ITEM-0036;Insumo_A98;465
-ITEM-0037;Insumo_J69;464
-ITEM-0038;Insumo_N57;463
-ITEM-0039;Insumo_P10;462
-ITEM-0040;Insumo_V51;461
-ITEM-0041;Insumo_X21;460
-ITEM-0042;Insumo_B14;459
-ITEM-0043;Insumo_M3;458
-ITEM-0044;Insumo_G32;457
-ITEM-0045;Insumo_C17;456
-ITEM-0046;Insumo_G82;455
-ITEM-0047;Insumo_A32;454
-ITEM-0048;Insumo_K26;453
-ITEM-0049;Insumo_X82;452
-ITEM-0050;Insumo_R89;451
-ITEM-0051;Insumo_H58;450
-ITEM-0052;Insumo_S27;449
-ITEM-0053;Insumo_K4;448
-ITEM-0054;Insumo_K56;447
-ITEM-0055;Insumo_X21;446
-ITEM-0056;Insumo_R71;445
-ITEM-0057;Insumo_M83;444
-ITEM-0058;Insumo_I85;443
-ITEM-0059;Insumo_L78;442
-ITEM-0060;Insumo_B83;441
-ITEM-0061;Insumo_S58;440
-ITEM-0062;Insumo_D52;439
-ITEM-0063;Insumo_F92;438
-ITEM-0064;Insumo_N23;437
-ITEM-0065;Insumo_I80;436
-ITEM-0066;Insumo_A74;435
-ITEM-0067;Insumo_Y81;434
-ITEM-0068;Insumo_X9;433
-ITEM-0069;Insumo_O25;432
-ITEM-0070;Insumo_D54;431
-ITEM-0071;Insumo_Z63;430
-ITEM-0072;Insumo_C42;429
-ITEM-0073;Insumo_J84;428
-ITEM-0074;Insumo_G56;427
-ITEM-0075;Insumo_O33;426
-ITEM-0076;Insumo_A21;425
-ITEM-0077;Insumo_Q55;424
-ITEM-0078;Insumo_I48;423
-ITEM-0079;Insumo_E5;422
-ITEM-0080;Insumo_Q32;421
-ITEM-0081;Insumo_V15;420
-ITEM-0082;Insumo_J65;419
-ITEM-0083;Insumo_J98;418
-ITEM-0084;Insumo_Z8;417
-ITEM-0085;Insumo_A51;416
-ITEM-0086;Insumo_I84;415
-ITEM-0087;Insumo_A9;414
-ITEM-0088;Insumo_S26;413
-ITEM-0089;Insumo_F34;412
-ITEM-0090;Insumo_V80;411
-ITEM-0091;Insumo_B62;410
-ITEM-0092;Insumo_K94;409
-ITEM-0093;Insumo_F60;408
-ITEM-0094;Insumo_K53;407
-ITEM-0095;Insumo_Y65;406
-ITEM-0096;Insumo_Y29;405
-ITEM-0097;Insumo_S35;404
-ITEM-0098;Insumo_T27;403
-ITEM-0099;Insumo_A35;402
-ITEM-0100;Insumo_S16;401
-ITEM-0101;Insumo_G91;400
-ITEM-0102;Insumo_Y10;399
-ITEM-0103;Insumo_A88;398
-ITEM-0104;Insumo_T25;397
-ITEM-0105;Insumo_Y15;396
-ITEM-0106;Insumo_H41;395
-ITEM-0107;Insumo_Q23;394
-ITEM-0108;Insumo_G62;393
-ITEM-0109;Insumo_T12;392
-ITEM-0110;Insumo_T68;391
-ITEM-0111;Insumo_A31;390
-ITEM-0112;Insumo_J71;389
-ITEM-0113;Insumo_A67;388
-ITEM-0114;Insumo_E79;387
-ITEM-0115;Insumo_E82;386
-ITEM-0116;Insumo_P30;385
-ITEM-0117;Insumo_R52;384
-ITEM-0118;Insumo_W27;383
-ITEM-0119;Insumo_M38;382
-ITEM-0120;Insumo_T38;381
-ITEM-0121;Insumo_O99;380
-ITEM-0122;Insumo_M26;379
-ITEM-0123;Insumo_N94;378
-ITEM-0124;Insumo_G42;377
-ITEM-0125;Insumo_H83;376
-ITEM-0126;Insumo_T77;375
-ITEM-0127;Insumo_J39;374
-ITEM-0128;Insumo_L12;373
-ITEM-0129;Insumo_F31;372
-ITEM-0130;Insumo_B47;371
-ITEM-0131;Insumo_N12;370
-ITEM-0132;Insumo_H41;369
-ITEM-0133;Insumo_B55;368
-ITEM-0134;Insumo_G12;367
-ITEM-0135;Insumo_G36;366
-ITEM-0136;Insumo_T49;365
-ITEM-0137;Insumo_N57;364
-ITEM-0138;Insumo_I4;363
-ITEM-0139;Insumo_G61;362
-ITEM-0140;Insumo_M97;361
-ITEM-0141;Insumo_R66;360
-ITEM-0142;Insumo_L19;359
-ITEM-0143;Insumo_I64;358
-ITEM-0144;Insumo_W86;357
-ITEM-0145;Insumo_N64;356
-ITEM-0146;Insumo_E80;355
-ITEM-0147;Insumo_Y65;354
-ITEM-0148;Insumo_B48;353
-ITEM-0149;Insumo_R35;352
-ITEM-0150;Insumo_W85;351
-ITEM-0151;Insumo_H98;350
-ITEM-0152;Insumo_V30;349
-ITEM-0153;Insumo_L5;348
-ITEM-0154;Insumo_T98;347
-ITEM-0155;Insumo_M61;346
-ITEM-0156;Insumo_Z90;345
-ITEM-0157;Insumo_E4;344
-ITEM-0158;Insumo_Q7;343
-ITEM-0159;Insumo_C92;342
-ITEM-0160;Insumo_G16;341
-ITEM-0161;Insumo_Y65;340
-ITEM-0162;Insumo_Z45;339
-ITEM-0163;Insumo_R89;338
-ITEM-0164;Insumo_E93;337
-ITEM-0165;Insumo_L76;336
-ITEM-0166;Insumo_B57;335
-ITEM-0167;Insumo_R80;334
-ITEM-0168;Insumo_Z69;333
-ITEM-0169;Insumo_G76;332
-ITEM-0170;Insumo_Y2;331
-ITEM-0171;Insumo_H14;330
-ITEM-0172;Insumo_E23;329
-ITEM-0173;Insumo_Y69;328
-ITEM-0174;Insumo_F73;327
-ITEM-0175;Insumo_G97;326
-ITEM-0176;Insumo_C30;325
-ITEM-0177;Insumo_U86;324
-ITEM-0178;Insumo_V4;323
-ITEM-0179;Insumo_X52;322
-ITEM-0180;Insumo_X31;321
-ITEM-0181;Insumo_D23;320
-ITEM-0182;Insumo_K69;319
-ITEM-0183;Insumo_X26;318
-ITEM-0184;Insumo_Q19;317
-ITEM-0185;Insumo_M97;316
-ITEM-0186;Insumo_O78;315
-ITEM-0187;Insumo_P32;314
-ITEM-0188;Insumo_F44;313
-ITEM-0189;Insumo_I74;312
-ITEM-0190;Insumo_O28;311
-ITEM-0191;Insumo_F20;310
-ITEM-0192;Insumo_C88;309
-ITEM-0193;Insumo_T64;308
-ITEM-0194;Insumo_D2;307
-ITEM-0195;Insumo_X62;306
-ITEM-0196;Insumo_W55;305
-ITEM-0197;Insumo_E3;304
-ITEM-0198;Insumo_F48;303
-ITEM-0199;Insumo_O11;302
-ITEM-0200;Insumo_H11;301
-ITEM-0201;Insumo_F77;300
-ITEM-0202;Insumo_U82;299
-ITEM-0203;Insumo_F51;298
-ITEM-0204;Insumo_E91;297
-ITEM-0205;Insumo_N79;296
-ITEM-0206;Insumo_D45;295
-ITEM-0207;Insumo_V29;294
-ITEM-0208;Insumo_I10;293
-ITEM-0209;Insumo_R6;292
-ITEM-0210;Insumo_C90;291
-ITEM-0211;Insumo_I3;290
-ITEM-0212;Insumo_N99;289
-ITEM-0213;Insumo_A24;288
-ITEM-0214;Insumo_X47;287
-ITEM-0215;Insumo_X81;286
-ITEM-0216;Insumo_U52;285
-ITEM-0217;Insumo_X3;284
-ITEM-0218;Insumo_Y56;283
-ITEM-0219;Insumo_S86;282
-ITEM-0220;Insumo_S13;281
-ITEM-0221;Insumo_L90;280
-ITEM-0222;Insumo_H99;279
-ITEM-0223;Insumo_D44;278
-ITEM-0224;Insumo_H24;277
-ITEM-0225;Insumo_G21;276
-ITEM-0226;Insumo_I69;275
-ITEM-0227;Insumo_B35;274
-ITEM-0228;Insumo_K89;273
-ITEM-0229;Insumo_C39;272
-ITEM-0230;Insumo_U70;271
-ITEM-0231;Insumo_X22;270
-ITEM-0232;Insumo_B32;269
-ITEM-0233;Insumo_E99;268
-ITEM-0234;Insumo_U13;267
-ITEM-0235;Insumo_R15;266
-ITEM-0236;Insumo_R15;265
-ITEM-0237;Insumo_W97;264
-ITEM-0238;Insumo_B99;263
-ITEM-0239;Insumo_P65;262
-ITEM-0240;Insumo_K7;261
-ITEM-0241;Insumo_K40;260
-ITEM-0242;Insumo_N55;259
-ITEM-0243;Insumo_X57;258
-ITEM-0244;Insumo_F31;257
-ITEM-0245;Insumo_C48;256
-ITEM-0246;Insumo_F77;255
-ITEM-0247;Insumo_B56;254
-ITEM-0248;Insumo_O10;253
-ITEM-0249;Insumo_Q42;252
-ITEM-0250;Insumo_M56;251
-ITEM-0251;Insumo_Q92;250
-ITEM-0252;Insumo_B80;249
-ITEM-0253;Insumo_W60;248
-ITEM-0254;Insumo_O49;247
-ITEM-0255;Insumo_U72;246
-ITEM-0256;Insumo_B54;245
-ITEM-0257;Insumo_H60;244
-ITEM-0258;Insumo_O79;243
-ITEM-0259;Insumo_R79;242
-ITEM-0260;Insumo_G39;241
-ITEM-0261;Insumo_G85;240
-ITEM-0262;Insumo_R63;239
-ITEM-0263;Insumo_G37;238
-ITEM-0264;Insumo_G67;237
-ITEM-0265;Insumo_T51;236
-ITEM-0266;Insumo_B91;235
-ITEM-0267;Insumo_E31;234
-ITEM-0268;Insumo_F68;233
-ITEM-0269;Insumo_V74;232
-ITEM-0270;Insumo_A73;231
-ITEM-0271;Insumo_U9;230
-ITEM-0272;Insumo_Q84;229
-ITEM-0273;Insumo_J0;228
-ITEM-0274;Insumo_M90;227
-ITEM-0275;Insumo_S15;226
-ITEM-0276;Insumo_B48;225
-ITEM-0277;Insumo_U68;224
-ITEM-0278;Insumo_G77;223
-ITEM-0279;Insumo_V42;222
-ITEM-0280;Insumo_G25;221
-ITEM-0281;Insumo_P59;220
-ITEM-0282;Insumo_S67;219
-ITEM-0283;Insumo_Y66;218
-ITEM-0284;Insumo_C47;217
-ITEM-0285;Insumo_F39;216
-ITEM-0286;Insumo_N70;215
-ITEM-0287;Insumo_K48;214
-ITEM-0288;Insumo_Q87;213
-ITEM-0289;Insumo_F88;212
-ITEM-0290;Insumo_O64;211
-ITEM-0291;Insumo_H86;210
-ITEM-0292;Insumo_D74;209
-ITEM-0293;Insumo_M45;208
-ITEM-0294;Insumo_X62;207
-ITEM-0295;Insumo_N63;206
-ITEM-0296;Insumo_S58;205
-ITEM-0297;Insumo_W77;204
-ITEM-0298;Insumo_I56;203
-ITEM-0299;Insumo_P94;202
-ITEM-0300;Insumo_M1;201
-ITEM-0301;Insumo_K20;200
-ITEM-0302;Insumo_O57;199
-ITEM-0303;Insumo_N84;198
-ITEM-0304;Insumo_H39;197
-ITEM-0305;Insumo_L25;196
-ITEM-0306;Insumo_O4;195
-ITEM-0307;Insumo_N89;194
-ITEM-0308;Insumo_E18;193
-ITEM-0309;Insumo_N3;192
-ITEM-0310;Insumo_A40;191
-ITEM-0311;Insumo_N17;190
-ITEM-0312;Insumo_A97;189
-ITEM-0313;Insumo_X49;188
-ITEM-0314;Insumo_M29;187
-ITEM-0315;Insumo_F80;186
-ITEM-0316;Insumo_N11;185
-ITEM-0317;Insumo_H84;184
-ITEM-0318;Insumo_R81;183
-ITEM-0319;Insumo_S27;182
-ITEM-0320;Insumo_V54;181
-ITEM-0321;Insumo_S50;180
-ITEM-0322;Insumo_S95;179
-ITEM-0323;Insumo_V66;178
-ITEM-0324;Insumo_W98;177
-ITEM-0325;Insumo_X78;176
-ITEM-0326;Insumo_X56;175
-ITEM-0327;Insumo_I97;174
-ITEM-0328;Insumo_F25;173
-ITEM-0329;Insumo_E24;172
-ITEM-0330;Insumo_Q55;171
-ITEM-0331;Insumo_U6;170
-ITEM-0332;Insumo_L15;169
-ITEM-0333;Insumo_Z96;168
-ITEM-0334;Insumo_V35;167
-ITEM-0335;Insumo_Z51;166
-ITEM-0336;Insumo_N38;165
-ITEM-0337;Insumo_E15;164
-ITEM-0338;Insumo_P49;163
-ITEM-0339;Insumo_R10;162
-ITEM-0340;Insumo_W28;161
-ITEM-0341;Insumo_J15;160
-ITEM-0342;Insumo_G81;159
-ITEM-0343;Insumo_M18;158
-ITEM-0344;Insumo_T41;157
-ITEM-0345;Insumo_U30;156
-ITEM-0346;Insumo_I93;155
-ITEM-0347;Insumo_V33;154
-ITEM-0348;Insumo_N99;153
-ITEM-0349;Insumo_Q51;152
-ITEM-0350;Insumo_F11;151
-ITEM-0351;Insumo_E1;150
-ITEM-0352;Insumo_E57;149
-ITEM-0353;Insumo_G93;148
-ITEM-0354;Insumo_M69;147
-ITEM-0355;Insumo_O65;146
-ITEM-0356;Insumo_L83;145
-ITEM-0357;Insumo_L33;144
-ITEM-0358;Insumo_L9;143
-ITEM-0359;Insumo_A3;142
-ITEM-0360;Insumo_I34;141
-ITEM-0361;Insumo_E25;140
-ITEM-0362;Insumo_K32;139
-ITEM-0363;Insumo_Z40;138
-ITEM-0364;Insumo_K14;137
-ITEM-0365;Insumo_F93;136
-ITEM-0366;Insumo_Z53;135
-ITEM-0367;Insumo_O58;134
-ITEM-0368;Insumo_K93;133
-ITEM-0369;Insumo_Q88;132
-ITEM-0370;Insumo_R88;131
-ITEM-0371;Insumo_S46;130
-ITEM-0372;Insumo_V67;129
-ITEM-0373;Insumo_X61;128
-ITEM-0374;Insumo_W73;127
-ITEM-0375;Insumo_Y68;126
-ITEM-0376;Insumo_W41;125
-ITEM-0377;Insumo_W39;124
-ITEM-0378;Insumo_N92;123
-ITEM-0379;Insumo_B45;122
-ITEM-0380;Insumo_A16;121
-ITEM-0381;Insumo_T79;120
-ITEM-0382;Insumo_M84;119
-ITEM-0383;Insumo_I8;118
-ITEM-0384;Insumo_P89;117
-ITEM-0385;Insumo_A98;116
-ITEM-0386;Insumo_W78;115
-ITEM-0387;Insumo_Q83;114
-ITEM-0388;Insumo_C0;113
-ITEM-0389;Insumo_A38;112
-ITEM-0390;Insumo_A20;111
-ITEM-0391;Insumo_T0;110
-ITEM-0392;Insumo_L23;109
-ITEM-0393;Insumo_Z96;108
-ITEM-0394;Insumo_E89;107
-ITEM-0395;Insumo_U51;106
-ITEM-0396;Insumo_N93;105
-ITEM-0397;Insumo_I88;104
-ITEM-0398;Insumo_A68;103
-ITEM-0399;Insumo_S80;102
-ITEM-0400;Insumo_K21;101
-ITEM-0401;Insumo_M74;100
-ITEM-0402;Insumo_A94;99
-ITEM-0403;Insumo_O47;98
-ITEM-0404;Insumo_S62;97
-ITEM-0405;Insumo_M68;96
-ITEM-0406;Insumo_S67;95
-ITEM-0407;Insumo_H29;94
-ITEM-0408;Insumo_D6;93
-ITEM-0409;Insumo_W23;92
-ITEM-0410;Insumo_M18;91
-ITEM-0411;Insumo_R57;90
-ITEM-0412;Insumo_M54;89
-ITEM-0413;Insumo_T17;88
-ITEM-0414;Insumo_A15;87
-ITEM-0415;Insumo_Q70;86
-ITEM-0416;Insumo_B65;85
-ITEM-0417;Insumo_J73;84
-ITEM-0418;Insumo_C73;83
-ITEM-0419;Insumo_B37;82
-ITEM-0420;Insumo_M22;81
-ITEM-0421;Insumo_M40;80
-ITEM-0422;Insumo_U90;79
-ITEM-0423;Insumo_D49;78
-ITEM-0424;Insumo_Q4;77
-ITEM-0425;Insumo_F44;76
-ITEM-0426;Insumo_J84;75
-ITEM-0427;Insumo_Z13;74
-ITEM-0428;Insumo_O69;73
-ITEM-0429;Insumo_Q69;72
-ITEM-0430;Insumo_T11;71
-ITEM-0431;Insumo_Z42;70
-ITEM-0432;Insumo_B86;69
-ITEM-0433;Insumo_W9;68
-ITEM-0434;Insumo_O91;67
-ITEM-0435;Insumo_E79;66
-ITEM-0436;Insumo_P2;65
-ITEM-0437;Insumo_Z65;64
-ITEM-0438;Insumo_U56;63
-ITEM-0439;Insumo_O34;62
-ITEM-0440;Insumo_S4;61
-ITEM-0441;Insumo_K68;60
-ITEM-0442;Insumo_L62;59
-ITEM-0443;Insumo_O85;58
-ITEM-0444;Insumo_B60;57
-ITEM-0445;Insumo_P80;56
-ITEM-0446;Insumo_R81;55
-ITEM-0447;Insumo_U79;54
-ITEM-0448;Insumo_B62;53
-ITEM-0449;Insumo_D10;52
-ITEM-0450;Insumo_V51;51
-ITEM-0451;Insumo_Q35;50
-ITEM-0452;Insumo_T40;49
-ITEM-0453;Insumo_N28;48
-ITEM-0454;Insumo_C58;47
-ITEM-0455;Insumo_V82;46
-ITEM-0456;Insumo_D74;45
-ITEM-0457;Insumo_D90;44
-ITEM-0458;Insumo_Z5;43
-ITEM-0459;Insumo_M7;42
-ITEM-0460;Insumo_D94;41
-ITEM-0461;Insumo_K99;40
-ITEM-0462;Insumo_U52;39
-ITEM-0463;Insumo_O91;38
-ITEM-0464;Insumo_S51;37
-ITEM-0465;Insumo_A58;36
-ITEM-0466;Insumo_K34;35
-ITEM-0467;Insumo_P38;34
-ITEM-0468;Insumo_E83;33
-ITEM-0469;Insumo_F72;32
-ITEM-0470;Insumo_C68;31
-ITEM-0471;Insumo_P30;30
-ITEM-0472;Insumo_R99;29
-ITEM-0473;Insumo_Y58;28
-ITEM-0474;Insumo_K77;27
-ITEM-0475;Insumo_M53;26
-ITEM-0476;Insumo_U79;25
-ITEM-0477;Insumo_N49;24
-ITEM-0478;Insumo_R93;23
-ITEM-0479;Insumo_N25;22
-ITEM-0480;Insumo_P80;21
-ITEM-0481;Insumo_I0;20
-ITEM-0482;Insumo_X0;19
-ITEM-0483;Insumo_X21;18
-ITEM-0484;Insumo_H79;17
-ITEM-0485;Insumo_Y57;16
-ITEM-0486;Insumo_Y25;15
-ITEM-0487;Insumo_D2;14
-ITEM-0488;Insumo_M77;13
-ITEM-0489;Insumo_V97;12
-ITEM-0490;Insumo_X73;11
-ITEM-0491;Insumo_W84;10
-ITEM-0492;Insumo_J15;9
-ITEM-0493;Insumo_Q75;8
-ITEM-0494;Insumo_N24;7
-ITEM-0495;Insumo_O88;6
-ITEM-0496;Insumo_T81;5
-ITEM-0497;Insumo_A21;4
-ITEM-0498;Insumo_S76;3
-ITEM-0499;Insumo_R78;2
-ITEM-0500;Insumo_U8;1
+ITEM-0001;Agujas Hipodérmicas 21G;500
+ITEM-0002;Gasas 5x5;499
+ITEM-0003;Guante Nitrilo Talla M;498
+ITEM-0004;Test Glucosa Tiras x50;497
+ITEM-0005;Antiséptico Povidona 10% 120ml;496
+ITEM-0006;Solución Salina 0.9% 1L;495
+ITEM-0007;Catéter 18G;494
+ITEM-0008;Vendas Elásticas 10cm;493
+ITEM-0009;Test Glucosa Tiras x50;492
+ITEM-0010;Gasas 10x10;491
+ITEM-0011;Gel Ultrasónico 250ml;490
+ITEM-0012;Test Glucosa Tiras x50;489
+ITEM-0013;Collar isabelino Talla L;488
+ITEM-0014;Clorhexidina 0.05% 1L;487
+ITEM-0015;Suturas Nylon 3-0;486
+ITEM-0016;Cubre Bocas Reutilizable;485
+ITEM-0017;Guante Nitrilo Talla L;484
+ITEM-0018;Guante Nitrilo Talla M;483
+ITEM-0019;Clorhexidina 0.05% 1L;482
+ITEM-0020;Catéter 22G;481
+ITEM-0021;Catéter 18G;480
+ITEM-0022;Collar isabelino Talla S;479
+ITEM-0023;Suturas Nylon 4-0;478
+ITEM-0024;Guante Nitrilo Talla M;477
+ITEM-0025;Guantes de Látex Talla M;476
+ITEM-0026;Catéter 20G;475
+ITEM-0027;Limpia Pisos 1L;474
+ITEM-0028;Agujas Hipodérmicas 23G;473
+ITEM-0029;Toallas Desechables;472
+ITEM-0030;Collar isabelino Talla L;471
+ITEM-0031;Compresas Estériles;470
+ITEM-0032;Catéter 18G;469
+ITEM-0033;Bolsas Biohazard 30L;468
+ITEM-0034;Suturas Nylon 3-0;467
+ITEM-0035;Antiséptico Povidona 10% 120ml;466
+ITEM-0036;Guante Nitrilo Talla S;465
+ITEM-0037;Hisopos Estériles;464
+ITEM-0038;Jeringa 10ml;463
+ITEM-0039;Toallas Desechables;462
+ITEM-0040;Cubre Bocas Reutilizable;461
+ITEM-0041;Cinta Micropore 2.5cm;460
+ITEM-0042;Antiséptico Povidona 10% 120ml;459
+ITEM-0043;Jeringa 5ml;458
+ITEM-0044;Catéter 22G;457
+ITEM-0045;Hisopos Estériles;456
+ITEM-0046;Cinta Micropore 2.5cm;455
+ITEM-0047;Gasas 10x10;454
+ITEM-0048;Clorhexidina 0.05% 1L;453
+ITEM-0049;Bisturí #11;452
+ITEM-0050;Gasas 10x10;451
+ITEM-0051;Mascarilla Quirúrgica;450
+ITEM-0052;Mascarilla Quirúrgica;449
+ITEM-0053;Suturas Nylon 4-0;448
+ITEM-0054;Solución Hartmann 1L;447
+ITEM-0055;Guante Nitrilo Talla L;446
+ITEM-0056;Guantes Desechables Vinilo M;445
+ITEM-0057;Bolsas Biohazard 60L;444
+ITEM-0058;Collar isabelino Talla L;443
+ITEM-0059;Gasas 5x5;442
+ITEM-0060;Bisturí #11;441
+ITEM-0061;Clorhexidina 0.05% 1L;440
+ITEM-0062;Guantes de Látex Talla M;439
+ITEM-0063;Termómetro Digital;438
+ITEM-0064;Agujas Hipodérmicas 21G;437
+ITEM-0065;Suturas Poliglactina 910 3-0;436
+ITEM-0066;Bisturí #10;435
+ITEM-0067;Guantes de Látex Talla L;434
+ITEM-0068;Catéter 20G;433
+ITEM-0069;Limpia Pisos 1L;432
+ITEM-0070;Alcohol 70% 500ml;431
+ITEM-0071;Guante Nitrilo Talla L;430
+ITEM-0072;Cánula Nasal;429
+ITEM-0073;Catéter 18G;428
+ITEM-0074;Termómetro Digital;427
+ITEM-0075;Clorhexidina 0.05% 1L;426
+ITEM-0076;Catéter 18G;425
+ITEM-0077;Gasas 10x10;424
+ITEM-0078;Bisturí #11;423
+ITEM-0079;Antiséptico Povidona 10% 120ml;422
+ITEM-0080;Bolsas Biohazard 60L;421
+ITEM-0081;Agujas Hipodérmicas 21G;420
+ITEM-0082;Bisturí #10;419
+ITEM-0083;Jeringa 10ml;418
+ITEM-0084;Bisturí #10;417
+ITEM-0085;Mascarilla Quirúrgica;416
+ITEM-0086;Catéter 22G;415
+ITEM-0087;Cánula Nasal;414
+ITEM-0088;Antiséptico Povidona 10% 120ml;413
+ITEM-0089;Toallas Desechables;412
+ITEM-0090;Gel Ultrasónico 250ml;411
+ITEM-0091;Agujas Hipodérmicas 23G;410
+ITEM-0092;Alcohol 70% 500ml;409
+ITEM-0093;Suturas Nylon 4-0;408
+ITEM-0094;Agujas Hipodérmicas 21G;407
+ITEM-0095;Jeringa 10ml;406
+ITEM-0096;Collar isabelino Talla L;405
+ITEM-0097;Guantes Desechables Vinilo M;404
+ITEM-0098;Solución Salina 0.9% 1L;403
+ITEM-0099;Jeringa 10ml;402
+ITEM-0100;Bolsas Biohazard 60L;401
+ITEM-0101;Bisturí #11;400
+ITEM-0102;Antiséptico Povidona 10% 120ml;399
+ITEM-0103;Agujas Hipodérmicas 21G;398
+ITEM-0104;Toallas Desechables;397
+ITEM-0105;Guantes de Látex Talla M;396
+ITEM-0106;Catéter 18G;395
+ITEM-0107;Gel Ultrasónico 250ml;394
+ITEM-0108;Esparadrapo 5cm x 10m;393
+ITEM-0109;Alcohol 70% 1L;392
+ITEM-0110;Catéter 18G;391
+ITEM-0111;Guante Nitrilo Talla L;390
+ITEM-0112;Esparadrapo 5cm x 10m;389
+ITEM-0113;Bisturí #23;388
+ITEM-0114;Antiséptico Povidona 10% 120ml;387
+ITEM-0115;Alcohol 70% 500ml;386
+ITEM-0116;Catéter 22G;385
+ITEM-0117;Guantes de Látex Talla L;384
+ITEM-0118;Limpia Pisos 1L;383
+ITEM-0119;Esparadrapo 5cm x 10m;382
+ITEM-0120;Catéter 22G;381
+ITEM-0121;Agujas Hipodérmicas 23G;380
+ITEM-0122;Lubricante Oftálmico 10ml;379
+ITEM-0123;Bisturí #23;378
+ITEM-0124;Agujas Hipodérmicas 23G;377
+ITEM-0125;Bolsas Biohazard 60L;376
+ITEM-0126;Jeringa 5ml;375
+ITEM-0127;Solución Hartmann 1L;374
+ITEM-0128;Vendas Elásticas 10cm;373
+ITEM-0129;Solución Salina 0.9% 1L;372
+ITEM-0130;Test Glucosa Tiras x50;371
+ITEM-0131;Guantes de Látex Talla M;370
+ITEM-0132;Collar isabelino Talla L;369
+ITEM-0133;Solución Hartmann 1L;368
+ITEM-0134;Test Glucosa Tiras x50;367
+ITEM-0135;Suturas Nylon 3-0;366
+ITEM-0136;Cubre Bocas Reutilizable;365
+ITEM-0137;Suturas Nylon 3-0;364
+ITEM-0138;Bisturí #23;363
+ITEM-0139;Bisturí #10;362
+ITEM-0140;Catéter 18G;361
+ITEM-0141;Vendas Elásticas 10cm;360
+ITEM-0142;Collar isabelino Talla S;359
+ITEM-0143;Lubricante Oftálmico 10ml;358
+ITEM-0144;Clorhexidina 0.05% 1L;357
+ITEM-0145;Hisopos Estériles;356
+ITEM-0146;Alcohol 70% 1L;355
+ITEM-0147;Gasas 5x5;354
+ITEM-0148;Jeringa 5ml;353
+ITEM-0149;Agujas Hipodérmicas 21G;352
+ITEM-0150;Jeringa 10ml;351
+ITEM-0151;Gel Ultrasónico 250ml;350
+ITEM-0152;Cubre Bocas Reutilizable;349
+ITEM-0153;Suturas Nylon 4-0;348
+ITEM-0154;Alcohol 70% 500ml;347
+ITEM-0155;Bisturí #11;346
+ITEM-0156;Bisturí #11;345
+ITEM-0157;Suturas Nylon 4-0;344
+ITEM-0158;Bolsas Biohazard 60L;343
+ITEM-0159;Collar isabelino Talla M;342
+ITEM-0160;Solución Hartmann 1L;341
+ITEM-0161;Guantes de Látex Talla M;340
+ITEM-0162;Guante Nitrilo Talla S;339
+ITEM-0163;Gel Ultrasónico 250ml;338
+ITEM-0164;Guantes Desechables Vinilo M;337
+ITEM-0165;Gasas 5x5;336
+ITEM-0166;Gel Ultrasónico 250ml;335
+ITEM-0167;Collar isabelino Talla L;334
+ITEM-0168;Hisopos Estériles;333
+ITEM-0169;Antiséptico Povidona 10% 120ml;332
+ITEM-0170;Agujas Hipodérmicas 23G;331
+ITEM-0171;Cinta Micropore 2.5cm;330
+ITEM-0172;Gasas 5x5;329
+ITEM-0173;Termómetro Digital;328
+ITEM-0174;Cubre Bocas Reutilizable;327
+ITEM-0175;Jeringa 10ml;326
+ITEM-0176;Bolsas Biohazard 60L;325
+ITEM-0177;Guante Nitrilo Talla S;324
+ITEM-0178;Guantes Desechables Vinilo M;323
+ITEM-0179;Guantes Desechables Vinilo M;322
+ITEM-0180;Solución Hartmann 1L;321
+ITEM-0181;Collar isabelino Talla S;320
+ITEM-0182;Hisopos Estériles;319
+ITEM-0183;Jeringa 20ml;318
+ITEM-0184;Collar isabelino Talla S;317
+ITEM-0185;Gasas 10x10;316
+ITEM-0186;Agujas Hipodérmicas 21G;315
+ITEM-0187;Tijeras de Vendaje;314
+ITEM-0188;Agujas Hipodérmicas 21G;313
+ITEM-0189;Collar isabelino Talla S;312
+ITEM-0190;Suturas Nylon 4-0;311
+ITEM-0191;Catéter 20G;310
+ITEM-0192;Jeringa 5ml;309
+ITEM-0193;Bisturí #10;308
+ITEM-0194;Hisopos Estériles;307
+ITEM-0195;Jeringa 10ml;306
+ITEM-0196;Collar isabelino Talla L;305
+ITEM-0197;Collar isabelino Talla M;304
+ITEM-0198;Guante Nitrilo Talla S;303
+ITEM-0199;Suturas Nylon 4-0;302
+ITEM-0200;Esparadrapo 5cm x 10m;301
+ITEM-0201;Lubricante Oftálmico 10ml;300
+ITEM-0202;Guante Nitrilo Talla M;299
+ITEM-0203;Gasas 5x5;298
+ITEM-0204;Bisturí #10;297
+ITEM-0205;Tijeras de Vendaje;296
+ITEM-0206;Solución Salina 0.9% 1L;295
+ITEM-0207;Alcohol 70% 1L;294
+ITEM-0208;Solución Salina 0.9% 1L;293
+ITEM-0209;Guantes de Látex Talla L;292
+ITEM-0210;Clorhexidina 0.05% 1L;291
+ITEM-0211;Clorhexidina 0.05% 1L;290
+ITEM-0212;Guantes Desechables Vinilo M;289
+ITEM-0213;Lubricante Oftálmico 10ml;288
+ITEM-0214;Alcohol 70% 500ml;287
+ITEM-0215;Hisopos Estériles;286
+ITEM-0216;Collar isabelino Talla L;285
+ITEM-0217;Vendas Elásticas 10cm;284
+ITEM-0218;Vendas Elásticas 10cm;283
+ITEM-0219;Cánula Nasal;282
+ITEM-0220;Desinfectante de Superficies 1L;281
+ITEM-0221;Guantes de Látex Talla M;280
+ITEM-0222;Jeringa 10ml;279
+ITEM-0223;Solución Hartmann 1L;278
+ITEM-0224;Collar isabelino Talla M;277
+ITEM-0225;Suturas Nylon 4-0;276
+ITEM-0226;Cubre Bocas Reutilizable;275
+ITEM-0227;Catéter 22G;274
+ITEM-0228;Collar isabelino Talla L;273
+ITEM-0229;Hisopos Estériles;272
+ITEM-0230;Guantes Desechables Vinilo M;271
+ITEM-0231;Toallas Desechables;270
+ITEM-0232;Catéter 20G;269
+ITEM-0233;Limpia Pisos 1L;268
+ITEM-0234;Tijeras de Vendaje;267
+ITEM-0235;Bisturí #23;266
+ITEM-0236;Cánula Nasal;265
+ITEM-0237;Agujas Hipodérmicas 23G;264
+ITEM-0238;Bisturí #10;263
+ITEM-0239;Bolsas Biohazard 30L;262
+ITEM-0240;Collar isabelino Talla M;261
+ITEM-0241;Bolsas Biohazard 30L;260
+ITEM-0242;Gasas 5x5;259
+ITEM-0243;Solución Salina 0.9% 1L;258
+ITEM-0244;Catéter 18G;257
+ITEM-0245;Alcohol 70% 500ml;256
+ITEM-0246;Cinta Micropore 2.5cm;255
+ITEM-0247;Guante Nitrilo Talla M;254
+ITEM-0248;Suturas Nylon 3-0;253
+ITEM-0249;Guantes de Látex Talla M;252
+ITEM-0250;Catéter 18G;251
+ITEM-0251;Suturas Nylon 3-0;250
+ITEM-0252;Catéter 18G;249
+ITEM-0253;Guante Nitrilo Talla S;248
+ITEM-0254;Alcohol 70% 500ml;247
+ITEM-0255;Limpia Pisos 1L;246
+ITEM-0256;Agujas Hipodérmicas 21G;245
+ITEM-0257;Alcohol 70% 1L;244
+ITEM-0258;Catéter 18G;243
+ITEM-0259;Alcohol 70% 500ml;242
+ITEM-0260;Guante Nitrilo Talla L;241
+ITEM-0261;Cinta Micropore 2.5cm;240
+ITEM-0262;Alcohol 70% 500ml;239
+ITEM-0263;Collar isabelino Talla S;238
+ITEM-0264;Solución Salina 0.9% 1L;237
+ITEM-0265;Antiséptico Povidona 10% 120ml;236
+ITEM-0266;Cánula Nasal;235
+ITEM-0267;Lubricante Oftálmico 10ml;234
+ITEM-0268;Catéter 22G;233
+ITEM-0269;Collar isabelino Talla L;232
+ITEM-0270;Vendas Elásticas 10cm;231
+ITEM-0271;Guantes Desechables Vinilo M;230
+ITEM-0272;Guantes de Látex Talla L;229
+ITEM-0273;Guantes de Látex Talla L;228
+ITEM-0274;Desinfectante de Superficies 1L;227
+ITEM-0275;Solución Salina 0.9% 1L;226
+ITEM-0276;Desinfectante de Superficies 1L;225
+ITEM-0277;Compresas Estériles;224
+ITEM-0278;Catéter 20G;223
+ITEM-0279;Gasas 10x10;222
+ITEM-0280;Gasas 10x10;221
+ITEM-0281;Cánula Nasal;220
+ITEM-0282;Cubre Bocas Reutilizable;219
+ITEM-0283;Mascarilla Quirúrgica;218
+ITEM-0284;Cubre Bocas Reutilizable;217
+ITEM-0285;Compresas Estériles;216
+ITEM-0286;Bolsas Biohazard 60L;215
+ITEM-0287;Guantes Desechables Vinilo M;214
+ITEM-0288;Alcohol 70% 1L;213
+ITEM-0289;Gel Ultrasónico 250ml;212
+ITEM-0290;Agujas Hipodérmicas 23G;211
+ITEM-0291;Agujas Hipodérmicas 23G;210
+ITEM-0292;Gasas 10x10;209
+ITEM-0293;Alcohol 70% 1L;208
+ITEM-0294;Bisturí #23;207
+ITEM-0295;Guantes Desechables Vinilo M;206
+ITEM-0296;Cinta Micropore 2.5cm;205
+ITEM-0297;Gasas 10x10;204
+ITEM-0298;Solución Salina 0.9% 1L;203
+ITEM-0299;Catéter 20G;202
+ITEM-0300;Catéter 20G;201
+ITEM-0301;Collar isabelino Talla L;200
+ITEM-0302;Bolsas Biohazard 30L;199
+ITEM-0303;Vendas Elásticas 10cm;198
+ITEM-0304;Cubre Bocas Reutilizable;197
+ITEM-0305;Jeringa 20ml;196
+ITEM-0306;Antiséptico Povidona 10% 120ml;195
+ITEM-0307;Bolsas Biohazard 60L;194
+ITEM-0308;Solución Salina 0.9% 1L;193
+ITEM-0309;Alcohol 70% 500ml;192
+ITEM-0310;Bolsas Biohazard 30L;191
+ITEM-0311;Guantes de Látex Talla M;190
+ITEM-0312;Gasas 10x10;189
+ITEM-0313;Alcohol 70% 1L;188
+ITEM-0314;Agujas Hipodérmicas 23G;187
+ITEM-0315;Collar isabelino Talla L;186
+ITEM-0316;Guante Nitrilo Talla S;185
+ITEM-0317;Clorhexidina 0.05% 1L;184
+ITEM-0318;Hisopos Estériles;183
+ITEM-0319;Solución Salina 0.9% 1L;182
+ITEM-0320;Jeringa 10ml;181
+ITEM-0321;Compresas Estériles;180
+ITEM-0322;Lubricante Oftálmico 10ml;179
+ITEM-0323;Desinfectante de Superficies 1L;178
+ITEM-0324;Catéter 22G;177
+ITEM-0325;Bisturí #23;176
+ITEM-0326;Alcohol 70% 1L;175
+ITEM-0327;Jeringa 10ml;174
+ITEM-0328;Bisturí #11;173
+ITEM-0329;Guante Nitrilo Talla S;172
+ITEM-0330;Bisturí #11;171
+ITEM-0331;Solución Hartmann 1L;170
+ITEM-0332;Bolsas Biohazard 60L;169
+ITEM-0333;Termómetro Digital;168
+ITEM-0334;Cubre Bocas Reutilizable;167
+ITEM-0335;Toallas Desechables;166
+ITEM-0336;Guantes Desechables Vinilo M;165
+ITEM-0337;Guantes de Látex Talla M;164
+ITEM-0338;Cánula Nasal;163
+ITEM-0339;Limpia Pisos 1L;162
+ITEM-0340;Lubricante Oftálmico 10ml;161
+ITEM-0341;Jeringa 5ml;160
+ITEM-0342;Catéter 20G;159
+ITEM-0343;Termómetro Digital;158
+ITEM-0344;Catéter 22G;157
+ITEM-0345;Alcohol 70% 1L;156
+ITEM-0346;Suturas Nylon 3-0;155
+ITEM-0347;Test Glucosa Tiras x50;154
+ITEM-0348;Collar isabelino Talla L;153
+ITEM-0349;Alcohol 70% 1L;152
+ITEM-0350;Test Glucosa Tiras x50;151
+ITEM-0351;Esparadrapo 5cm x 10m;150
+ITEM-0352;Alcohol 70% 1L;149
+ITEM-0353;Alcohol 70% 1L;148
+ITEM-0354;Suturas Nylon 3-0;147
+ITEM-0355;Desinfectante de Superficies 1L;146
+ITEM-0356;Collar isabelino Talla S;145
+ITEM-0357;Collar isabelino Talla M;144
+ITEM-0358;Jeringa 10ml;143
+ITEM-0359;Alcohol 70% 1L;142
+ITEM-0360;Collar isabelino Talla S;141
+ITEM-0361;Clorhexidina 0.05% 1L;140
+ITEM-0362;Jeringa 20ml;139
+ITEM-0363;Alcohol 70% 500ml;138
+ITEM-0364;Suturas Nylon 4-0;137
+ITEM-0365;Alcohol 70% 500ml;136
+ITEM-0366;Gel Ultrasónico 250ml;135
+ITEM-0367;Solución Salina 0.9% 1L;134
+ITEM-0368;Bisturí #23;133
+ITEM-0369;Gasas 5x5;132
+ITEM-0370;Guantes de Látex Talla L;131
+ITEM-0371;Solución Salina 0.9% 1L;130
+ITEM-0372;Suturas Nylon 3-0;129
+ITEM-0373;Suturas Nylon 4-0;128
+ITEM-0374;Guante Nitrilo Talla L;127
+ITEM-0375;Suturas Poliglactina 910 3-0;126
+ITEM-0376;Clorhexidina 0.05% 1L;125
+ITEM-0377;Compresas Estériles;124
+ITEM-0378;Cánula Nasal;123
+ITEM-0379;Suturas Nylon 3-0;122
+ITEM-0380;Guantes de Látex Talla L;121
+ITEM-0381;Collar isabelino Talla M;120
+ITEM-0382;Esparadrapo 5cm x 10m;119
+ITEM-0383;Solución Hartmann 1L;118
+ITEM-0384;Catéter 22G;117
+ITEM-0385;Cánula Nasal;116
+ITEM-0386;Limpia Pisos 1L;115
+ITEM-0387;Esparadrapo 5cm x 10m;114
+ITEM-0388;Solución Salina 0.9% 1L;113
+ITEM-0389;Solución Hartmann 1L;112
+ITEM-0390;Bisturí #23;111
+ITEM-0391;Vendas Elásticas 10cm;110
+ITEM-0392;Cánula Nasal;109
+ITEM-0393;Agujas Hipodérmicas 23G;108
+ITEM-0394;Tijeras de Vendaje;107
+ITEM-0395;Bolsas Biohazard 60L;106
+ITEM-0396;Esparadrapo 5cm x 10m;105
+ITEM-0397;Hisopos Estériles;104
+ITEM-0398;Alcohol 70% 500ml;103
+ITEM-0399;Guante Nitrilo Talla S;102
+ITEM-0400;Bolsas Biohazard 60L;101
+ITEM-0401;Suturas Poliglactina 910 3-0;100
+ITEM-0402;Guantes de Látex Talla L;99
+ITEM-0403;Gasas 10x10;98
+ITEM-0404;Alcohol 70% 500ml;97
+ITEM-0405;Collar isabelino Talla L;96
+ITEM-0406;Catéter 22G;95
+ITEM-0407;Collar isabelino Talla S;94
+ITEM-0408;Solución Hartmann 1L;93
+ITEM-0409;Vendas Elásticas 10cm;92
+ITEM-0410;Mascarilla Quirúrgica;91
+ITEM-0411;Alcohol 70% 500ml;90
+ITEM-0412;Solución Salina 0.9% 1L;89
+ITEM-0413;Bisturí #10;88
+ITEM-0414;Termómetro Digital;87
+ITEM-0415;Jeringa 10ml;86
+ITEM-0416;Bolsas Biohazard 30L;85
+ITEM-0417;Collar isabelino Talla L;84
+ITEM-0418;Limpia Pisos 1L;83
+ITEM-0419;Tijeras de Vendaje;82
+ITEM-0420;Suturas Poliglactina 910 3-0;81
+ITEM-0421;Agujas Hipodérmicas 23G;80
+ITEM-0422;Collar isabelino Talla M;79
+ITEM-0423;Guante Nitrilo Talla S;78
+ITEM-0424;Cánula Nasal;77
+ITEM-0425;Guantes de Látex Talla M;76
+ITEM-0426;Tijeras de Vendaje;75
+ITEM-0427;Cánula Nasal;74
+ITEM-0428;Gasas 10x10;73
+ITEM-0429;Vendas Elásticas 10cm;72
+ITEM-0430;Solución Hartmann 1L;71
+ITEM-0431;Gasas 5x5;70
+ITEM-0432;Gasas 10x10;69
+ITEM-0433;Test Glucosa Tiras x50;68
+ITEM-0434;Guantes de Látex Talla M;67
+ITEM-0435;Jeringa 5ml;66
+ITEM-0436;Antiséptico Povidona 10% 120ml;65
+ITEM-0437;Termómetro Digital;64
+ITEM-0438;Suturas Nylon 4-0;63
+ITEM-0439;Catéter 22G;62
+ITEM-0440;Limpia Pisos 1L;61
+ITEM-0441;Cinta Micropore 2.5cm;60
+ITEM-0442;Catéter 22G;59
+ITEM-0443;Gel Ultrasónico 250ml;58
+ITEM-0444;Agujas Hipodérmicas 21G;57
+ITEM-0445;Solución Hartmann 1L;56
+ITEM-0446;Collar isabelino Talla S;55
+ITEM-0447;Lubricante Oftálmico 10ml;54
+ITEM-0448;Solución Hartmann 1L;53
+ITEM-0449;Alcohol 70% 1L;52
+ITEM-0450;Clorhexidina 0.05% 1L;51
+ITEM-0451;Agujas Hipodérmicas 21G;50
+ITEM-0452;Cubre Bocas Reutilizable;49
+ITEM-0453;Antiséptico Povidona 10% 120ml;48
+ITEM-0454;Guante Nitrilo Talla L;47
+ITEM-0455;Guante Nitrilo Talla S;46
+ITEM-0456;Cinta Micropore 2.5cm;45
+ITEM-0457;Vendas Elásticas 10cm;44
+ITEM-0458;Agujas Hipodérmicas 21G;43
+ITEM-0459;Solución Hartmann 1L;42
+ITEM-0460;Jeringa 10ml;41
+ITEM-0461;Test Glucosa Tiras x50;40
+ITEM-0462;Bolsas Biohazard 30L;39
+ITEM-0463;Guantes de Látex Talla M;38
+ITEM-0464;Limpia Pisos 1L;37
+ITEM-0465;Cubre Bocas Reutilizable;36
+ITEM-0466;Guantes de Látex Talla M;35
+ITEM-0467;Guante Nitrilo Talla S;34
+ITEM-0468;Gasas 5x5;33
+ITEM-0469;Alcohol 70% 500ml;32
+ITEM-0470;Toallas Desechables;31
+ITEM-0471;Jeringa 5ml;30
+ITEM-0472;Collar isabelino Talla L;29
+ITEM-0473;Guante Nitrilo Talla L;28
+ITEM-0474;Bisturí #10;27
+ITEM-0475;Suturas Nylon 3-0;26
+ITEM-0476;Guantes de Látex Talla M;25
+ITEM-0477;Jeringa 5ml;24
+ITEM-0478;Cubre Bocas Reutilizable;23
+ITEM-0479;Vendas Elásticas 10cm;22
+ITEM-0480;Guante Nitrilo Talla L;21
+ITEM-0481;Tijeras de Vendaje;20
+ITEM-0482;Bisturí #10;19
+ITEM-0483;Guante Nitrilo Talla L;18
+ITEM-0484;Mascarilla Quirúrgica;17
+ITEM-0485;Catéter 22G;16
+ITEM-0486;Gel Ultrasónico 250ml;15
+ITEM-0487;Solución Salina 0.9% 1L;14
+ITEM-0488;Cánula Nasal;13
+ITEM-0489;Gasas 10x10;12
+ITEM-0490;Mascarilla Quirúrgica;11
+ITEM-0491;Guantes de Látex Talla M;10
+ITEM-0492;Compresas Estériles;9
+ITEM-0493;Suturas Poliglactina 910 3-0;8
+ITEM-0494;Test Glucosa Tiras x50;7
+ITEM-0495;Jeringa 5ml;6
+ITEM-0496;Solución Salina 0.9% 1L;5
+ITEM-0497;Jeringa 10ml;4
+ITEM-0498;Jeringa 20ml;3
+ITEM-0499;Compresas Estériles;2
+ITEM-0500;Guante Nitrilo Talla M;1

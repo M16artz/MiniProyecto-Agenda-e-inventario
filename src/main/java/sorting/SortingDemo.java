@@ -1,8 +1,8 @@
-package ed.u2.sorting;
+package sorting;
 
-import domain.Cita;
+import domain.Appointment;
 import domain.Item;
-import domain.Paciente;
+import domain.Patient;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +10,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import util.CsvLoader;
-import util.DatasetGenerator;
 import util.SortingMetrics;
 
 /**
@@ -32,8 +31,7 @@ public class SortingDemo {
     public static void main(String[] args) {
         try {
             // Generar datasets al inicio para asegurar que existan
-            System.out.println("Verificando/Generando datasets...");
-            DatasetGenerator.generar(); // Asegúrate de que tu generador tenga este método estático
+            System.out.println("Verificando datasets...");
 
             boolean continuar = true;
             while (continuar) {
@@ -109,7 +107,7 @@ public class SortingDemo {
     private static void runTest1() {
         System.out.println("\n--- TEST 1: Citas (100 registros, Aleatorio) ---");
         try {
-            Cita[] citas = CsvLoader.loadCitas(PATH_CITAS_100);
+            Appointment[] citas = CsvLoader.loadCitas(PATH_CITAS_100);
             ejecutarPruebas(citas, "Citas Aleatorias");
         } catch (Exception e) {
             handleError(e, PATH_CITAS_100);
@@ -119,7 +117,7 @@ public class SortingDemo {
     private static void runTest2() {
         System.out.println("\n--- TEST 2: Citas (100 registros, Casi Ordenado) ---");
         try {
-            Cita[] citas = CsvLoader.loadCitas(PATH_CITAS_CASI);
+            Appointment[] citas = CsvLoader.loadCitas(PATH_CITAS_CASI);
             ejecutarPruebas(citas, "Citas Casi Ordenadas");
         } catch (Exception e) {
             handleError(e, PATH_CITAS_CASI);
@@ -129,7 +127,7 @@ public class SortingDemo {
     private static void runTest3() {
         System.out.println("\n--- TEST 3: Pacientes (500 registros, Repetidos) ---");
         try {
-            Paciente[] pacientes = CsvLoader.loadPacientes(PATH_PACIENTES);
+            Patient[] pacientes = CsvLoader.loadPacientes(PATH_PACIENTES);
             ejecutarPruebas(pacientes, "Pacientes");
         } catch (Exception e) {
             handleError(e, PATH_PACIENTES);
