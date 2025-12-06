@@ -11,7 +11,6 @@ public class Patient implements Comparable<Patient>{
     public String getId() {
         return id;
     }
-
     public void setId(String id) {
         this.id = id;
     }
@@ -19,7 +18,6 @@ public class Patient implements Comparable<Patient>{
     public String getApellido() {
         return lastName;
     }
-
     public void setApellido(String apellido) {
         this.lastName = apellido;
     }
@@ -27,7 +25,6 @@ public class Patient implements Comparable<Patient>{
     public int getPrioridad() {
         return priority;
     }
-
     public void setPrioridad(int prioridad) {
         this.priority = prioridad;
     }

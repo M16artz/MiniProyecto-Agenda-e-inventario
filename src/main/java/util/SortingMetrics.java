@@ -16,6 +16,18 @@ public class SortingMetrics {
         this.executionTimeNs = executionTimeNs;
     }
 
+    public long getComparisons() {
+        return comparisons;
+    }
+
+    public long getAssignments() {
+        return assignments;
+    }
+
+    public long getExecutionTimeNs() {
+        return executionTimeNs;
+    }
+
     @Override
     public String toString() {
         return String.format("Comp: %d | Mov: %d | Tiempo: %d \u00B5s", comparisons, assignments, executionTimeNs);

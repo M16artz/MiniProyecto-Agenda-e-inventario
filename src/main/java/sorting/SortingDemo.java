@@ -9,6 +9,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+
+import domain.PatientList;
+import searchs.ArraySearch;
 import util.CsvLoader;
 import util.SortingMetrics;
 
@@ -54,6 +57,9 @@ public class SortingDemo {
                     case 5:
                         runTest4();
                         break;
+                    case 6:
+                        menuPacientes();
+                        break;
                     case 0:
                         System.out.println("Saliendo del sistema...");
                         continuar = false;
@@ -79,6 +85,7 @@ public class SortingDemo {
         System.out.println("3. Dataset 2: Citas (Casi Ordenado - 100)");
         System.out.println("4. Dataset 3: Pacientes (Repetidos - 500)");
         System.out.println("5. Dataset 4: Inventario (Inverso - 500)");
+        System.out.println("6. Módulo Pacientes (SLL)");
         System.out.println("0. Salir");
         System.out.println("-".repeat(40));
     }
@@ -127,7 +134,8 @@ public class SortingDemo {
     private static void runTest3() {
         System.out.println("\n--- TEST 3: Pacientes (500 registros, Repetidos) ---");
         try {
-            Patient[] pacientes = CsvLoader.loadPacientes(PATH_PACIENTES);
+            List<Patient> lista = CsvLoader.loadPacientes(PATH_PACIENTES);
+            Patient[] pacientes = lista.toArray(new Patient[0]);
             ejecutarPruebas(pacientes, "Pacientes");
         } catch (Exception e) {
             handleError(e, PATH_PACIENTES);
@@ -138,8 +146,7 @@ public class SortingDemo {
         System.out.println("\n--- TEST 4: Inventario (500 registros, Inverso) ---");
         try {
             Item[] inventario = CsvLoader.loadInventario(PATH_INVENTARIO);
-            ejecutarPruebas(inventario, "Inventario Inverso");
-
+            ejecutarPruebas(inventario, "Inventario");
         } catch (Exception e) {
             handleError(e, PATH_INVENTARIO);
         }
@@ -179,6 +186,14 @@ public class SortingDemo {
         System.out.println("Tiempo:              \t\t" + mInsertion.executionTimeNs);
         System.out.println("+-----------+--------------+-------------+--------------+--------------+");
 
+        System.out.println("\n¿Quieres realizar búsquedas sobre el dataset ordenado? (s/n): ");
+        String r = scanner.nextLine().trim().toLowerCase();
+
+        if (r.equals("s")){
+            T[] arr = Arrays.copyOf(datosOriginales, datosOriginales.length);
+            Arrays.sort(arr);
+            menuBusqueda(arr, nombreDataset);
+        }
     }
 
     /**
@@ -239,6 +254,142 @@ public class SortingDemo {
     private static <T> void printArray(T[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.printf("[%3d] %s%n", i + 1, array[i].toString());
+        }
+    }
+
+
+
+    private static <T extends Comparable<T>> void menuBusqueda(T[] array, String nombreDataset){
+        boolean vivo = true;
+
+        while (vivo){
+            System.out.println("\n--- BUSQUEDAS: " + nombreDataset );
+            System.out.println("1. Búsqueda Binaria");
+            System.out.println("2. Límite inferior");
+            System.out.println("3. Límite superior");
+            System.out.println("4. Encontrar todo");
+            System.out.println("5. Reporte de duplicados");
+            System.out.println("0. Menú principal");
+            System.out.println("Opción: ");
+            int op = getValidInt("");
+
+            switch (op){
+                case 1 -> buscarBinary(array);
+                case 2 -> buscarLower(array);
+                case 3 -> buscarUpper(array);
+                case 4 -> buscarAll(array);
+                case 5 -> reporteDuplicados(array);
+                case 0 -> vivo = false;
+            }
+        }
+    }
+
+    private static void menuPacientes() {
+        try {
+            System.out.println("\n--- PACIENTES (SLL) ---");
+
+            PatientList lista = new PatientList();
+            List<Patient> cargados = CsvLoader.loadPacientes(PATH_PACIENTES);
+
+            for (Patient p : cargados) lista.add(p);
+
+            boolean vivo = true;
+            while (vivo) {
+                System.out.println("\n1. Buscar PRIMERO por apellido");
+                System.out.println("2. Buscar ÚLTIMO por apellido");
+                System.out.println("3. Listar pacientes con prioridad 1");
+                System.out.println("0. Volver");
+                int op = getValidInt("Opción: ");
+
+                switch (op) {
+                    case 1 -> {
+                        System.out.print("Apellido: ");
+                        String a = scanner.nextLine();
+                        System.out.println("Resultado: " + lista.findFirst(a));
+                    }
+                    case 2 -> {
+                        System.out.print("Apellido: ");
+                        String a = scanner.nextLine();
+                        System.out.println("Resultado: " + lista.findLast(a));
+                    }
+                    case 3 -> {
+                        System.out.println("Pacientes prioridad 1:");
+                        lista.findAllPrioridad1().forEach(System.out::println);
+                    }
+                    case 0 -> vivo = false;
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error cargando pacientes en SLL: " + e);
+        }
+    }
+
+    private static <T extends Comparable<T>> void buscarBinary(T[] arr){
+        System.out.println("Ingrese texto para buscar: ");
+        String k = scanner.nextLine();
+
+        for (T t : arr) {
+            if (t.toString().contains(k)) {
+                int pos = ArraySearch.binarySearch(arr, t);
+                System.out.println("binarySearch → índice: " + pos);
+                return;
+            }
+        }
+        System.out.println("No encontrado.");
+    }
+
+
+
+    private static <T extends Comparable<T>> void buscarLower(T[] arr) {
+        System.out.print("Ingrese texto para buscar: ");
+        String k = scanner.nextLine();
+
+        for (T t : arr) {
+            if (t.toString().contains(k)) {
+                int pos = ArraySearch.lowerBound(arr, t);
+                System.out.println("lowerBound → " + pos);
+                return;
+            }
+        }
+        System.out.println("No encontrado.");
+    }
+
+    private static <T extends Comparable<T>> void buscarUpper(T[] arr) {
+        System.out.print("Ingrese texto para buscar: ");
+        String k = scanner.nextLine();
+
+        for (T t : arr) {
+            if (t.toString().contains(k)) {
+                int pos = ArraySearch.upperBound(arr, t);
+                System.out.println("upperBound → " + pos);
+                return;
+            }
+        }
+        System.out.println("No encontrado.");
+    }
+
+    private static <T extends Comparable<T>> void buscarAll(T[] arr) {
+        System.out.print("Ingrese texto para buscar: ");
+        String p = scanner.nextLine();
+
+        List<Integer> res = ArraySearch.findAll(arr, x -> x.toString().contains(p));
+        System.out.println("Índices: " + res);
+    }
+
+    private static <T extends Comparable<T>> void reporteDuplicados(T[] arr) {
+        System.out.println("\n--- REPORTE DE DUPLICADOS ---");
+        int i = 0;
+        while (i < arr.length) {
+
+            int lo = ArraySearch.lowerBound(arr, arr[i]);
+            int hi = ArraySearch.upperBound(arr, arr[i]);
+
+            int count = hi - lo + 1;
+            if (count > 1) {
+                System.out.println(arr[i] + " → repetido " + count + " veces");
+            }
+            i = hi + 1;
         }
     }
 
