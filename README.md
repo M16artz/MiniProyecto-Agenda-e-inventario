@@ -47,7 +47,7 @@ No es necesario ejecutar el generador manualmente. La clase principal SortingDem
 
 Ejecuta la clase principal del proyecto:
 
-  * ed.u2.sorting.SortingDemo
+  * ed.u2.ed.u2.sorting.SortingDemo
   
 * Navegación en el Menú: La consola mostrará un menú interactivo:
 

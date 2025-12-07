@@ -1,8 +1,8 @@
 package util;
 
-import sorting.BubbleSort;
-import sorting.InsertionSort;
-import sorting.SelectionSort;
+import ed.u2.sorting.BubbleSort;
+import ed.u2.sorting.InsertionSort;
+import ed.u2.sorting.SelectionSort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

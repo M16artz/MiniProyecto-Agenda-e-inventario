@@ -1,8 +1,8 @@
 package util;
 
-import domain.Appointment;
-import domain.Item;
-import domain.Patient;
+import ed.u2.model.Appointment;
+import ed.u2.model.Item;
+import ed.u2.model.Patient;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
