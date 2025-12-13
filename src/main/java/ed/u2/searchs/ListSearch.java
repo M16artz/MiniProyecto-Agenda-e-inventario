@@ -3,7 +3,8 @@ package ed.u2.searchs;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import ed.u2.sorting.Node;
+import ed.u2.model.Node;
+import ed.u2.model.Patient;
 
 /**
  *
@@ -11,30 +12,27 @@ import ed.u2.sorting.Node;
  * @author RichardC022 : Richard Cajas
  * @author Mzero11 : Mateo Silva
  */
-public class BusquedaLista {
+public class ListSearch {
 
-    public static <T extends Comparable<T>> Node<T> findFirst(Node<T> cabeza, T key) {
-        if (cabeza == null) {
-            return null;
+    public static Node findFirst(Node head, Patient key) {
+    Node current = head;
+    while (current != null) {
+        if (current.getData().compareTo(key) == 0) {
+            return current;
         }
-
-        Node<T> actual = cabeza;
-        while (actual != null) {
-            if (actual.getData().compareTo(key) == 0) {
-                return actual; // primera coincidencia
-            }
-            actual = actual.getNext();
-        }
-        return null;
+        current = current.getNext();
     }
+    return null;
+}
 
-    public static <T extends Comparable<T>> Node<T> findLast(Node<T> head, T key) {
+
+    public static Node findLast(Node head, Patient key) {
         if (head == null) {
             return null;
         }
 
-        Node<T> current = head;
-        Node<T> last = null;
+        Node current = head;
+        Node last = null;
 
         while (current != null) {
             if (current.getData().compareTo(key) == 0) {
@@ -45,13 +43,13 @@ public class BusquedaLista {
         return last;
     }
 
-    public static <T extends Comparable<T>> List<Node<T>> findAll(Node<T> head, Predicate<T> p) {
-        List<Node<T>> result = new ArrayList<>();
+    public static  List<Node> findAll(Node head, Predicate<Patient> p) {
+        List<Node> result = new ArrayList<>();
         if (head == null) {
             return result;
         }
 
-        Node<T> current = head;
+        Node current = head;
         while (current != null) {
             if (p.test(current.getData())) {
                 result.add(current);

@@ -1,0 +1,19 @@
+=== TABLA DE EVIDENCIA - ORDENACIÓN ===
+Dataset: Pacientes
+Tamaño (n): 500
+Fecha: 2025-12-12_21-40
+R=10, descartadas primeras 3 ejecuciones
+Métricas en mediana
+
++-----------------+------------------+------------------+------------------+
+| Algoritmo       | Comparaciones    | Movimientos      | Tiempo (ns)      |
++-----------------+------------------+------------------+------------------+
+| Bubble Sort     | 123424           | 174255           | 10483300         |
+| Selection Sort  | 124750           | 1455             | 5359700          |
+| Insertion Sort  | 58580            | 59083            | 947400           |
++-----------------+------------------+------------------+------------------+
+
+=== ANÁLISIS COMPARATIVO ===
+1. Más rápido: Insertion Sort
+2. Menos comparaciones: Selection Sort
+3. Menos movimientos: Selection Sort

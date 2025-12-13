@@ -1,5 +1,7 @@
 package ed.u2.searchs;
 
+import ed.u2.model.Appointment;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -14,11 +16,13 @@ public class ArraySearch {
 
     public static <T extends Comparable<T>> int findFirst(T[] a, T key) {
 
-        if (a == null || a.length == 0) return -1;
+        if (a == null || a.length == 0) {
+            return -1;
+        }
 
         for (int i = 0; i < a.length; i++) {
             // Usamos compareTo() para chequear la igualdad: compareTo(key) == 0
-            if (a[i].compareTo(key) == 0) { 
+            if (a[i].compareTo(key) == 0) {
                 return i;
             }
         }
@@ -27,7 +31,9 @@ public class ArraySearch {
 
     public static <T extends Comparable<T>> int findLast(T[] a, T key) {
 
-        if (a == null || a.length == 0) return -1;
+        if (a == null || a.length == 0) {
+            return -1;
+        }
 
         int last = -1;
         for (int i = 0; i < a.length; i++) {
@@ -42,11 +48,13 @@ public class ArraySearch {
     public static <T> List<Integer> findAll(T[] a, Predicate<T> p) {
         List<Integer> results = new ArrayList<>();
 
-        if (a == null) return results;
+        if (a == null) {
+            return results;
+        }
 
         for (int i = 0; i < a.length; i++) {
             // Se usa el predicado genérico Predicate<T>
-            if (p.test(a[i])) { 
+            if (p.test(a[i])) {
                 results.add(i);
             }
         }
@@ -54,7 +62,9 @@ public class ArraySearch {
     }
 
     public static <T extends Comparable<T>> int binarySearch(T[] array, T key) {
-        if (array == null || array.length == 0) return -1;
+        if (array == null || array.length == 0) {
+            return -1;
+        }
 
         int low = 0;
         int high = array.length - 1;
@@ -65,10 +75,10 @@ public class ArraySearch {
             // Comparación: a[mid] == key -> compareTo(key) == 0
             if (array[mid].compareTo(key) == 0) {
                 return mid;
-            // Comparación: a[mid] < key -> compareTo(key) < 0
+                // Comparación: a[mid] < key -> compareTo(key) < 0
             } else if (array[mid].compareTo(key) < 0) {
                 low = mid + 1;
-            // Comparación: a[mid] > key -> compareTo(key) > 0
+                // Comparación: a[mid] > key -> compareTo(key) > 0
             } else {
                 high = mid - 1;
             }
@@ -76,17 +86,19 @@ public class ArraySearch {
         return -1;
     }
 
-   public static <T extends Comparable<T>> int lowerBound(T[] array, T key) {
-        if (array == null || array.length == 0) return -1;
-        
+    public static <T extends Comparable<T>> int lowerBound(T[] array, T key) {
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+
         int low = 0;
         int high = array.length;
 
         while (low < high) {
             int mid = low + (high - low) / 2;
-            
+
             // Comparación: arreglo[medio] < valor -> compareTo(valor) < 0
-            if (array[mid].compareTo(key) < 0) { 
+            if (array[mid].compareTo(key) < 0) {
                 low = mid + 1;
             } else {
                 high = mid;
@@ -100,14 +112,16 @@ public class ArraySearch {
     }
 
     public static <T extends Comparable<T>> int upperBound(T[] array, T key) {
-        if (array == null || array.length == 0) return -1;
+        if (array == null || array.length == 0) {
+            return -1;
+        }
 
         int low = 0;
         int high = array.length;
 
         while (low < high) {
             int mid = low + (high - low) / 2;
-            
+
             if (array[mid].compareTo(key) <= 0) {
                 low = mid + 1;
             } else {
@@ -116,60 +130,100 @@ public class ArraySearch {
         }
 
         if (low > 0 && array[low - 1].compareTo(key) == 0) {
-            return low - 1; 
+            return low - 1;
         }
         return -1;
     }
-    
+
     /**
-     * Búsqueda Secuencial Clásica con contador de Trazas (Comparaciones).
-     * Sirve para comparar rendimiento contra el Centinela.
+     * Busca citas dentro de un rango de fechas (inclusive)
+     * Precondición: el arreglo debe estar ordenado por fecha
      */
-    public static int busquedaSecuencialTrazas(int[] a, int key) {
-        if (a == null || a.length == 0) return -1;
+    public static List<Appointment> findAppointmentsInRange(Appointment[] appointments, 
+            LocalDateTime start, LocalDateTime end) {
         
-        int comparaciones = 0;
+        List<Appointment> result = new ArrayList<>();
         
-        for (int i = 0; i < a.length; i++) {
-            // Contamos la verificación del bucle (i < a.length) que acaba de pasar
-            comparaciones++; 
+        if (appointments == null || start == null || end == null || start.isAfter(end)) {
+            return result;
+        }
+        
+        // Usar binary search para encontrar el límite inferior
+        int low = findLowerBoundForRange(appointments, start);
+        if (low == -1) return result;
+        
+        // Recorrer desde low hasta encontrar el límite superior
+        for (int i = low; i < appointments.length; i++) {
+            LocalDateTime currentDate = appointments[i].getFechaHora();
             
-            // Contamos la verificación del dato (a[i] == key)
-            comparaciones++; 
+            if (currentDate.isBefore(start)) {
+                continue;
+            }
             
-            if (a[i] == key) {
-                System.out.println("   [Secuencial] Comparaciones Totales (Bucle + If): " + comparaciones);
-                return i; 
+            if (currentDate.isAfter(end)) {
+                break;
+            }
+            
+            result.add(appointments[i]);
+        }
+        
+        return result;
+    }
+    
+    private static int findLowerBoundForRange(Appointment[] appointments, LocalDateTime start) {
+        int low = 0;
+        int high = appointments.length;
+        
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            LocalDateTime midDate = appointments[mid].getFechaHora();
+            
+            if (midDate.compareTo(start) < 0) {
+                low = mid + 1;
+            } else {
+                high = mid;
             }
         }
         
-        // Si llegamos aquí, el bucle hizo una última comparación (i < a.length)
-        comparaciones++; 
-        
-        System.out.println("   [Secuencial] Comparaciones Totales (Bucle + If): " + comparaciones);
-        return -1; 
+        return (low < appointments.length) ? low : -1;
     }
     
-    public static int busquedaPorCentinelaTrazas(int[] arreglo, int valor) {
-        if (arreglo == null || arreglo.length == 0) return -1;
-
-        int[] auxiliar = new int[(arreglo.length + 1)];
-        int comparaciones = 0;
-        
-        for (int i = 0; i < arreglo.length; i++) {
-            auxiliar[i] = arreglo[i];
+    /**
+     * Búsqueda por Centinela para arreglos genéricos usando Predicate
+     */
+    public static <T> int sentinelSearch(T[] array, Predicate<T> condition) {
+        if (array == null || array.length == 0) {
+            return -1;
         }
-        auxiliar[arreglo.length] = valor; 
-        
+
+        int lastIndex = array.length - 1;
+        T lastElement = array[lastIndex];
+
+        // Si el último elemento cumple la condición, retornar su índice
+        if (condition.test(lastElement)) {
+            return lastIndex;
+        }
+
+        // Guardar el último elemento original y colocar centinela
+        array[lastIndex] = lastElement; // Se mantiene igual porque ya verificamos
+
         int i = 0;
-        comparaciones++; 
-        while (auxiliar[i] != valor) {
-            comparaciones++;
+        while (!condition.test(array[i])) {
             i++;
         }
-        
-        System.out.println("   [Centinela] Comparaciones realizadas: " + comparaciones);
-        
-        return i;
+
+        // Restaurar el último elemento
+        array[lastIndex] = lastElement;
+
+        // Si i llegó al último índice, no se encontró (excepto si era el centinela)
+        return (i == lastIndex) ? -1 : i;
     }
+
+    /**
+     * Búsqueda por Centinela para objetos Comparable
+     */
+    public static <T extends Comparable<T>> int sentinelSearchComparable(T[] array, T key) {
+        return sentinelSearch(array, element -> element.compareTo(key) == 0);
+    }
+
 }
