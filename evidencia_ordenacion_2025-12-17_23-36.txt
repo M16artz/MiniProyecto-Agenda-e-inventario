@@ -1,0 +1,19 @@
+=== TABLA DE EVIDENCIA - ORDENACIÓN ===
+Dataset: Citas Aleatorias
+Tamaño (n): 100
+Fecha: 2025-12-17_23-36
+R=10, descartadas primeras 3 ejecuciones
+Métricas en mediana
+
++-----------------+------------------+------------------+------------------+
+| Algoritmo       | Comparaciones    | Movimientos      | Tiempo (ns)      |
++-----------------+------------------+------------------+------------------+
+| Bubble Sort     | 4950             | 6927             | 928000           |
+| Selection Sort  | 4950             | 282              | 228800           |
+| Insertion Sort  | 2403             | 2507             | 124200           |
++-----------------+------------------+------------------+------------------+
+
+=== ANÁLISIS COMPARATIVO ===
+1. Más rápido: Insertion Sort
+2. Menos comparaciones: Selection Sort
+3. Menos movimientos: Selection Sort

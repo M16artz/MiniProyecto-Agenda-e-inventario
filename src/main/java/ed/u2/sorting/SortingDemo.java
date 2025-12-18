@@ -50,13 +50,11 @@ public class SortingDemo {
             System.out.println("============================================");
             System.out.println("   AGENDA E INVENTARIO INTELIGENTES - UNL");
             System.out.println("============================================");
-            System.out.println("\n📂 Cargando archivos CSV...\n");
+            System.out.println("\nCargando archivos CSV...\n");
             
             cargarTodosLosArchivos();
             
-            System.out.println("\n✅ Todos los archivos cargados exitosamente!");
-            System.out.println("   Presione Enter para continuar...");
-            scanner.nextLine();
+            System.out.println("\nTodos los archivos cargados exitosamente!");
             
             // ============================================
             // 2. MENÚ PRINCIPAL
@@ -80,7 +78,7 @@ public class SortingDemo {
                         procesarInventario();
                         break;
                     case 0:
-                        System.out.println("\n👋 Saliendo del sistema...");
+                        System.out.println("\nSaliendo del sistema...");
                         continuar = false;
                         break;
                 }
@@ -89,7 +87,7 @@ public class SortingDemo {
             scanner.close();
             
         } catch (Exception e) {
-            System.err.println("❌ Error fatal en la aplicación: " + e.getMessage());
+            System.err.println("Error fatal en la aplicación: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -99,17 +97,17 @@ public class SortingDemo {
     // ============================================
     private static void cargarTodosLosArchivos() throws Exception {
         // Cargar citas aleatorias
-        System.out.print("📅 Cargando citas aleatorias... ");
+        System.out.print("Cargando citas aleatorias... ");
         citasAleatorias = CsvLoader.loadCitas(PATH_CITAS_100);
         System.out.println("✅ " + citasAleatorias.length + " registros");
         
         // Cargar citas casi ordenadas
-        System.out.print("📅 Cargando citas casi ordenadas... ");
+        System.out.print("Cargando citas casi ordenadas... ");
         citasCasiOrdenadas = CsvLoader.loadCitas(PATH_CITAS_CASI);
-        System.out.println("✅ " + citasCasiOrdenadas.length + " registros");
+        System.out.println("Listos " + citasCasiOrdenadas.length + " registros");
         
         // Cargar pacientes (SOLO lista enlazada, NO arreglo)
-        System.out.print("👥 Cargando pacientes (lista enlazada)... ");
+        System.out.print("Cargando pacientes (lista enlazada)... ");
         List<Patient> pacientesList = CsvLoader.loadPacientes(PATH_PACIENTES);
         
         // Crear lista enlazada de pacientes
@@ -117,12 +115,12 @@ public class SortingDemo {
         for (Patient p : pacientesList) {
             pacientesLista.add(p);
         }
-        System.out.println("✅ " + pacientesLista.size() + " registros (Singly Linked List)");
+        System.out.println("Listos " + pacientesLista.size() + " registros (Singly Linked List)");
         
         // Cargar inventario
-        System.out.print("📦 Cargando inventario... ");
+        System.out.print("Cargando inventario... ");
         inventarioInverso = CsvLoader.loadInventario(PATH_INVENTARIO);
-        System.out.println("✅ " + inventarioInverso.length + " registros");
+        System.out.println("Listos " + inventarioInverso.length + " registros");
     }
 
     // ============================================
@@ -132,14 +130,14 @@ public class SortingDemo {
         System.out.println("\n" + "=".repeat(60));
         System.out.println("        SELECCIONE EL DATASET A PROCESAR");
         System.out.println("=".repeat(60));
-        System.out.println("1. 📅 Citas (100 registros, Aleatorio)");
-        System.out.println("2. 📅 Citas (100 registros, Casi Ordenado)");
-        System.out.println("3. 👥 Pacientes (500 registros, Solo Lista Enlazada)");
-        System.out.println("4. 📦 Inventario (500 registros, Inverso)");
-        System.out.println("0. 🚪 Salir del programa");
+        System.out.println("1. Citas (100 registros, Aleatorio)");
+        System.out.println("2. Citas (100 registros, Casi Ordenado)");
+        System.out.println("3. Pacientes (500 registros, Solo Lista Enlazada)");
+        System.out.println("4. Inventario (500 registros, Inverso)");
+        System.out.println("0. Salir del programa");
         System.out.println("-".repeat(60));
-        System.out.println("💡 Nota: Pacientes se maneja solo como Singly Linked List (SLL)");
-        System.out.println("       No se aplica ordenamiento, solo búsquedas secuenciales");
+        System.out.println("Nota: Pacientes se maneja solo como Singly Linked List (SLL)");
+        System.out.println("No se aplica ordenamiento, solo búsquedas secuenciales");
     }
 
     // ============================================
@@ -174,12 +172,12 @@ public class SortingDemo {
         System.out.println("   MÓDULO PACIENTES (Singly Linked List - SLL)");
         System.out.println("=".repeat(60));
         
-        System.out.println("\nℹ️  INFORMACIÓN DEL DATASET:");
+        System.out.println("\nINFORMACIÓN DEL DATASET:");
         System.out.println("   Tipo: Singly Linked List (SLL)");
         System.out.println("   Total pacientes: " + pacientesLista.size());
         System.out.println("   Característica: Repetidos en apellidos");
         
-        System.out.println("\n⚠️  NOTA IMPORTANTE:");
+        System.out.println("\nNOTA IMPORTANTE:");
         System.out.println("   Los pacientes se manejan SOLO como lista enlazada.");
         System.out.println("   No se aplica ordenamiento (la SLL mantiene orden de inserción).");
         System.out.println("   Solo se realizan búsquedas secuenciales.");
@@ -206,7 +204,7 @@ public class SortingDemo {
     private static <T extends Comparable<T>> SortingMetrics[] ejecutarYMostrarOrdenamientos(
             T[] datosOriginales, String nombreDataset) {
         
-        System.out.println("\n⚙ Ejecutando algoritmos de ordenación...");
+        System.out.println("\nEjecutando algoritmos de ordenación...");
         System.out.println("   Método: R=10 ejecuciones, descartando 3 de calentamiento");
         System.out.println("   Métrica: Mediana de tiempos\n");
         
@@ -235,14 +233,14 @@ public class SortingDemo {
             System.out.println("\n" + "=".repeat(60));
             System.out.println("   BÚSQUEDAS EN PACIENTES (Singly Linked List)");
             System.out.println("=".repeat(60));
-            System.out.println("1. 🔍 Encontrar primer paciente por apellido");
-            System.out.println("2. 🔍 Encontrar último paciente por apellido");
-            System.out.println("3. 📋 Listar pacientes con prioridad 1");
-            System.out.println("4. 📊 Mostrar estadísticas de la lista");
-            System.out.println("5. 🔄 Probar búsqueda secuencial con tiempo");
-            System.out.println("6. ↩️  Volver al menú principal");
+            System.out.println("1. Encontrar primer paciente por apellido");
+            System.out.println("2. Encontrar último paciente por apellido");
+            System.out.println("3. Listar pacientes con prioridad 1");
+            System.out.println("4. Mostrar estadísticas de la lista");
+            System.out.println("5. Probar búsqueda secuencial con tiempo");
+            System.out.println("6. Volver al menú principal");
             System.out.println("-".repeat(60));
-            System.out.println("💡 Tipo de búsqueda: SECUENCIAL (única opción para SLL)");
+            System.out.println("Tipo de búsqueda: SECUENCIAL (única opción para SLL)");
             System.out.println("   Complejidad: O(n) en el peor caso");
             
             int opcion = getValidInt("Seleccione una opción: ", 1, 6);
@@ -283,34 +281,31 @@ public class SortingDemo {
         String apellido = scanner.nextLine().trim();
         
         if (apellido.isEmpty()) {
-            System.out.println("❌ Debe ingresar un apellido válido");
+            System.out.println("Debe ingresar un apellido válido");
             return;
         }
         
-        System.out.println("\n⚡ Iniciando búsqueda secuencial en SLL...");
+        System.out.println("\nIniciando búsqueda secuencial en SLL...");
         long inicio = System.nanoTime();
         Patient encontrado = pacientesLista.findFirst(apellido);
         long fin = System.nanoTime();
         long tiempo = fin - inicio;
         
-        System.out.println("\n📊 RESULTADOS DE BÚSQUEDA:");
+        System.out.println("\nRESULTADOS DE BÚSQUEDA:");
         System.out.println("   Tipo: Búsqueda secuencial en SLL");
         System.out.println("   Tiempo: " + tiempo + " nanosegundos");
         System.out.println("   Tamaño lista: " + pacientesLista.size() + " elementos");
         
         if (encontrado != null) {
-            System.out.println("\n✅ PRIMER PACIENTE ENCONTRADO:");
+            System.out.println("\nPRIMER PACIENTE ENCONTRADO:");
             System.out.println("   ID: " + encontrado.getId());
             System.out.println("   Apellido: " + encontrado.getApellido());
             System.out.println("   Prioridad: " + encontrado.getPrioridad());
             System.out.println("   Posición: Primera ocurrencia en la lista");
         } else {
-            System.out.println("\n❌ No se encontró ningún paciente con apellido: " + apellido);
+            System.out.println("\nNo se encontró ningún paciente con apellido: " + apellido);
             System.out.println("   La búsqueda revisó todos los " + pacientesLista.size() + " elementos");
         }
-        
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void buscarUltimoPaciente() {
@@ -322,11 +317,11 @@ public class SortingDemo {
         String apellido = scanner.nextLine().trim();
         
         if (apellido.isEmpty()) {
-            System.out.println("❌ Debe ingresar un apellido válido");
+            System.out.println("Debe ingresar un apellido válido");
             return;
         }
         
-        System.out.println("\n⚡ Iniciando búsqueda secuencial en SLL...");
+        System.out.println("\nIniciando búsqueda secuencial en SLL...");
         System.out.println("   (Debe recorrer toda la lista para encontrar el último)");
         
         long inicio = System.nanoTime();
@@ -334,13 +329,13 @@ public class SortingDemo {
         long fin = System.nanoTime();
         long tiempo = fin - inicio;
         
-        System.out.println("\n📊 RESULTADOS DE BÚSQUEDA:");
+        System.out.println("\nRESULTADOS DE BÚSQUEDA:");
         System.out.println("   Tipo: Búsqueda secuencial en SLL (hasta el final)");
         System.out.println("   Tiempo: " + tiempo + " nanosegundos");
         System.out.println("   Tamaño lista: " + pacientesLista.size() + " elementos");
         
         if (encontrado != null) {
-            System.out.println("\n✅ ÚLTIMO PACIENTE ENCONTRADO:");
+            System.out.println("\nÚLTIMO PACIENTE ENCONTRADO:");
             System.out.println("   ID: " + encontrado.getId());
             System.out.println("   Apellido: " + encontrado.getApellido());
             System.out.println("   Prioridad: " + encontrado.getPrioridad());
@@ -348,9 +343,6 @@ public class SortingDemo {
         } else {
             System.out.println("\n❌ No se encontró ningún paciente con apellido: " + apellido);
         }
-        
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void listarPrioridad1() {
@@ -358,14 +350,14 @@ public class SortingDemo {
         System.out.println("   LISTAR PACIENTES CON PRIORIDAD 1 (URGENTES)");
         System.out.println("=".repeat(50));
         
-        System.out.println("\n⚡ Buscando pacientes con prioridad 1...");
+        System.out.println("\nBuscando pacientes con prioridad 1...");
         
         long inicio = System.nanoTime();
         List<Patient> urgentes = pacientesLista.findAllPrioridad1();
         long fin = System.nanoTime();
         long tiempo = fin - inicio;
         
-        System.out.println("\n📊 RESULTADOS DE BÚSQUEDA:");
+        System.out.println("\nRESULTADOS DE BÚSQUEDA:");
         System.out.println("   Tipo: Búsqueda con predicado (prioridad == 1)");
         System.out.println("   Tiempo: " + tiempo + " nanosegundos");
         System.out.println("   Total pacientes urgentes encontrados: " + urgentes.size());
@@ -374,7 +366,7 @@ public class SortingDemo {
                 (urgentes.size() * 100.0 / pacientesLista.size()) : 0) + "%");
         
         if (!urgentes.isEmpty()) {
-            System.out.println("\n📄 PACIENTES URGENTES (prioridad 1):");
+            System.out.println("\nPACIENTES URGENTES (prioridad 1):");
             System.out.println("┌─────┬────────────┬────────────┬──────────┬────────────────────┐");
             System.out.println("│ No. │ ID         │ Apellido   │ Prioridad│ Tiempo de búsqueda │");
             System.out.println("├─────┼────────────┼────────────┼──────────┼────────────────────┤");
@@ -391,7 +383,7 @@ public class SortingDemo {
             }
             
             // Mostrar distribución por apellido
-            System.out.println("\n📈 DISTRIBUCIÓN POR APELLIDO (urgentes):");
+            System.out.println("\nDISTRIBUCIÓN POR APELLIDO (urgentes):");
             java.util.Map<String, Integer> conteoApellidos = new java.util.HashMap<>();
             for (Patient p : urgentes) {
                 String apellido = p.getApellido();
@@ -404,11 +396,8 @@ public class SortingDemo {
                 }
             }
         } else {
-            System.out.println("\n✅ No hay pacientes con prioridad 1 en la lista");
+            System.out.println("\nNo hay pacientes con prioridad 1 en la lista");
         }
-        
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void mostrarEstadisticasPacientes() {
@@ -416,12 +405,12 @@ public class SortingDemo {
         System.out.println("   ESTADÍSTICAS DE LA LISTA DE PACIENTES");
         System.out.println("=".repeat(50));
         
-        System.out.println("\n📊 INFORMACIÓN GENERAL:");
+        System.out.println("\nINFORMACIÓN GENERAL:");
         System.out.println("   Total pacientes: " + pacientesLista.size());
         System.out.println("   ¿Lista vacía?: " + (pacientesLista.size() == 0 ? "Sí" : "No"));
         
         // Calcular estadísticas avanzadas
-        System.out.println("\n🎯 DISTRIBUCIÓN POR PRIORIDAD:");
+        System.out.println("\nDISTRIBUCIÓN POR PRIORIDAD:");
         
         int[] conteoPrioridad = new int[6]; // Índices 1-5
         int totalApellidosUnicos = 0;
@@ -462,7 +451,7 @@ public class SortingDemo {
                 i, conteoPrioridad[i], porcentaje);
         }
         
-        System.out.println("\n👥 ESTADÍSTICAS DE APELLIDOS:");
+        System.out.println("\nESTADÍSTICAS DE APELLIDOS:");
         System.out.println("   Apellidos únicos: " + totalApellidosUnicos);
         System.out.println("   Promedio pacientes por apellido: " + 
             String.format("%.2f", pacientesLista.size() > 0 ? 
@@ -470,7 +459,7 @@ public class SortingDemo {
         
         // Mostrar apellidos más comunes (si hay datos)
         if (pacientesLista.size() > 0) {
-            System.out.println("\n🏆 TOP 5 APELLIDOS MÁS COMUNES:");
+            System.out.println("\nTOP 5 APELLIDOS MÁS REPETIDOS:");
             
             // Contar frecuencia de apellidos
             java.util.Map<String, Integer> frecuenciaApellidos = new java.util.HashMap<>();
@@ -495,14 +484,12 @@ public class SortingDemo {
             }
         }
         
-        System.out.println("\n💾 ESTRUCTURA DE DATOS:");
+        System.out.println("\nESTRUCTURA DE DATOS:");
         System.out.println("   Tipo: Singly Linked List (SLL)");
         System.out.println("   Ventajas: Inserción O(1), flexibilidad");
         System.out.println("   Desventajas: Búsqueda O(n), acceso aleatorio no disponible");
         System.out.println("   Uso recomendado: Datos dinámicos con inserciones frecuentes");
-        
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
+
     }
     
     private static void probarBusquedaSecuencial() {
@@ -510,7 +497,7 @@ public class SortingDemo {
         System.out.println("   PRUEBA DE BÚSQUEDA SECUENCIAL EN SLL");
         System.out.println("=".repeat(50));
         
-        System.out.println("\n📈 COMPARATIVA DE BÚSQUEDAS SECUENCIALES:");
+        System.out.println("\nCOMPARATIVA DE BÚSQUEDAS SECUENCIALES:");
         
         // Probar con diferentes apellidos (algunos existentes, otros no)
         String[] apellidosPrueba = {"Gomez", "Perez", "Rodriguez", "Lopez", "NoExiste"};
@@ -545,20 +532,18 @@ public class SortingDemo {
         
         System.out.println("└────────────────────┴────────────┴────────────┴──────────────┘");
         
-        System.out.println("\n📊 CONCLUSIÓN:");
+        System.out.println("\nCONCLUSIÓN:");
         System.out.println("   • Búsqueda secuencial en SLL tiene complejidad O(n)");
         System.out.println("   • Mejor caso: O(1) (primer elemento)");
         System.out.println("   • Peor caso: O(n) (último elemento o no encontrado)");
         System.out.println("   • No requiere orden previo");
         System.out.println("   • Simple pero ineficiente para listas grandes");
         
-        System.out.println("\n⚠️  LIMITACIONES DE SLL:");
+        System.out.println("\nLIMITACIONES DE SLL:");
         System.out.println("   • No se puede acceder por índice rápidamente");
         System.out.println("   • No se puede aplicar búsqueda binaria");
         System.out.println("   • Para búsquedas eficientes, considerar otras estructuras");
-        
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
+
     }
 
     // ============================================
@@ -628,7 +613,7 @@ public class SortingDemo {
     private static void mostrarTablaResultados(String dataset, int n, 
             SortingMetrics bubble, SortingMetrics selection, SortingMetrics insertion) {
         
-        System.out.println("\n📊 RESULTADOS DE ORDENACIÓN - " + dataset.toUpperCase());
+        System.out.println("\nRESULTADOS DE ORDENACIÓN - " + dataset.toUpperCase());
         System.out.println("   Tamaño del dataset: " + n + " elementos");
         System.out.println("┌─────────────────┬──────────────────┬──────────────────┬──────────────────┐");
         System.out.println("│ Algoritmo       │ Comparaciones    │ Movimientos      │ Tiempo (ns)      │");
@@ -651,7 +636,7 @@ public class SortingDemo {
         Item[] inventarioOrdenado = Arrays.copyOf(inventario, inventario.length);
         Arrays.sort(inventarioOrdenado); // Ordena por stock (compareTo de Item)
         
-        System.out.println("\n✅ Inventario ordenado por stock");
+        System.out.println("\nInventario ordenado por stock");
         System.out.println("   Stock mínimo: " + inventarioOrdenado[0].getStock());
         System.out.println("   Stock máximo: " + inventarioOrdenado[inventarioOrdenado.length-1].getStock());
         
@@ -660,11 +645,11 @@ public class SortingDemo {
             System.out.println("\n" + "=".repeat(60));
             System.out.println("   BÚSQUEDAS EN INVENTARIO (Ordenado por Stock)");
             System.out.println("=".repeat(60));
-            System.out.println("1. 🔍 Búsqueda binaria de stock específico");
-            System.out.println("2. 📊 Buscar todos los items con stock bajo (≤ 10)");
-            System.out.println("3. 📈 Buscar items con stock crítico (≤ 5)");
-            System.out.println("4. 🔢 Encontrar límites para un valor de stock");
-            System.out.println("5. ↩️  Volver al menú principal");
+            System.out.println("1. Búsqueda binaria de stock específico");
+            System.out.println("2. Buscar todos los items con stock bajo (≤ 10)");
+            System.out.println("3. Buscar items con stock crítico (≤ 5)");
+            System.out.println("4. Encontrar límites para un valor de stock");
+            System.out.println("5. Volver al menú principal");
             System.out.println("-".repeat(60));
             
             int opcion = getValidInt("Seleccione una opción: ", 1, 5);
@@ -690,7 +675,7 @@ public class SortingDemo {
     }
     
     private static void buscarStockEspecifico(Item[] inventarioOrdenado) {
-        System.out.println("\n🔍 BÚSQUEDA BINARIA DE STOCK ESPECÍFICO");
+        System.out.println("\nBÚSQUEDA BINARIA DE STOCK ESPECÍFICO");
         System.out.println("-".repeat(40));
         
         System.out.print("Ingrese valor de stock a buscar: ");
@@ -706,7 +691,7 @@ public class SortingDemo {
         System.out.println("\n⏱ Tiempo de búsqueda: " + (fin - inicio) + " ns");
         
         if (posicion != -1) {
-            System.out.println("\n✅ ITEM ENCONTRADO:");
+            System.out.println("\nITEM ENCONTRADO:");
             System.out.println("   Índice: " + posicion);
             System.out.println("   ID: " + inventarioOrdenado[posicion].getId());
             System.out.println("   Insumo: " + inventarioOrdenado[posicion].getInsumo());
@@ -715,18 +700,16 @@ public class SortingDemo {
             // Mostrar items con el mismo stock (pueden haber duplicados)
             mostrarDuplicadosStock(inventarioOrdenado, stockBuscado, posicion);
         } else {
-            System.out.println("\n❌ No se encontró ningún item con stock: " + stockBuscado);
+            System.out.println("\nNo se encontró ningún item con stock: " + stockBuscado);
             
             // Sugerir stocks cercanos
             sugerirStocksCercanos(inventarioOrdenado, stockBuscado);
         }
-        
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
+       
     }
     
     private static void buscarStockBajo(Item[] inventarioOrdenado, int limite) {
-        System.out.println("\n📊 ITEMS CON STOCK " + (limite == 5 ? "CRÍTICO" : "BAJO") + " (≤ " + limite + ")");
+        System.out.println("\nITEMS CON STOCK " + (limite == 5 ? "CRÍTICO" : "BAJO") + " (≤ " + limite + ")");
         System.out.println("-".repeat(40));
         
         // Como el arreglo está ordenado por stock, podemos usar binary search
@@ -745,10 +728,10 @@ public class SortingDemo {
         }
         
         if (upper >= 0) {
-            System.out.println("\n⚠ ALERTA: " + (upper + 1) + " items con stock " + 
+            System.out.println("\nALERTA: " + (upper + 1) + " items con stock " + 
                 (limite == 5 ? "crítico" : "bajo"));
             
-            System.out.println("\n📄 LISTA DE ITEMS:");
+            System.out.println("\nLISTA DE ITEMS:");
             System.out.println("┌─────┬────────────┬──────────────────────┬───────┐");
             System.out.println("│ No. │ ID         │ Insumo               │ Stock │");
             System.out.println("├─────┼────────────┼──────────────────────┼───────┤");
@@ -764,15 +747,13 @@ public class SortingDemo {
                 System.out.println("   ... y " + (upper - 19) + " más");
             }
         } else {
-            System.out.println("\n✅ No hay items con stock ≤ " + limite);
+            System.out.println("\nNo hay items con stock ≤ " + limite);
         }
         
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void buscarLimitesStock(Item[] inventarioOrdenado) {
-        System.out.println("\n🔢 LÍMITES PARA VALOR DE STOCK");
+        System.out.println("\nLÍMITES PARA VALOR DE STOCK");
         System.out.println("-".repeat(40));
         
         System.out.print("Ingrese valor de stock: ");
@@ -783,7 +764,7 @@ public class SortingDemo {
         int lower = ArraySearch.lowerBound(inventarioOrdenado, busqueda);
         int upper = ArraySearch.upperBound(inventarioOrdenado, busqueda);
         
-        System.out.println("\n📊 RESULTADOS PARA STOCK = " + stock);
+        System.out.println("\nRESULTADOS PARA STOCK = " + stock);
         System.out.println("   Lower Bound: " + (lower != -1 ? lower : "No encontrado"));
         System.out.println("   Upper Bound: " + (upper != -1 ? upper : "No encontrado"));
         
@@ -798,8 +779,6 @@ public class SortingDemo {
             }
         }
         
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void mostrarDuplicadosStock(Item[] inventario, int stock, int posicion) {
@@ -816,7 +795,7 @@ public class SortingDemo {
         }
         
         if (fin > inicio) {
-            System.out.println("\n📦 " + (fin - inicio + 1) + " items tienen stock = " + stock);
+            System.out.println("\n" + (fin - inicio + 1) + " items tienen stock = " + stock);
             System.out.println("   Índices: " + inicio + " a " + fin);
         }
     }
@@ -827,7 +806,7 @@ public class SortingDemo {
         int posicionInsercion = -Arrays.binarySearch(inventario, busqueda) - 1;
         
         if (posicionInsercion >= 0 && posicionInsercion < inventario.length) {
-            System.out.println("\n💡 STOCKS CERCANOS DISPONIBLES:");
+            System.out.println("\nSTOCKS CERCANOS DISPONIBLES:");
             
             if (posicionInsercion > 0) {
                 System.out.println("   Stock menor más cercano: " + 
@@ -851,7 +830,7 @@ public class SortingDemo {
         Appointment[] citasOrdenadas = Arrays.copyOf(citas, citas.length);
         Arrays.sort(citasOrdenadas);
         
-        System.out.println("\n✅ Arreglo ordenado por fecha-hora");
+        System.out.println("\nArreglo ordenado por fecha-hora");
         System.out.println("   Primer elemento: " + citasOrdenadas[0].getFechaHora());
         System.out.println("   Último elemento: " + citasOrdenadas[citasOrdenadas.length-1].getFechaHora());
         
@@ -860,11 +839,11 @@ public class SortingDemo {
             System.out.println("\n" + "=".repeat(60));
             System.out.println("   BÚSQUEDAS EN CITAS " + tipo.toUpperCase());
             System.out.println("=".repeat(60));
-            System.out.println("1. 🔍 Búsqueda binaria por fecha-hora");
-            System.out.println("2. 📅 Búsqueda en rango de fechas");
-            System.out.println("3. ⬇️⬆️  Límites inferior/superior de una fecha");
-            System.out.println("4. 📊 Comparar lower/upper bound");
-            System.out.println("5. ↩️  Volver al menú principal");
+            System.out.println("1. Búsqueda binaria por fecha-hora");
+            System.out.println("2. Búsqueda en rango de fechas");
+            System.out.println("3. Límites inferior/superior de una fecha");
+            System.out.println("4. Comparar lower/upper bound");
+            System.out.println("5. Volver al menú principal");
             System.out.println("-".repeat(60));
             
             int opcion = getValidInt("Seleccione una opción: ", 1, 5);
@@ -890,10 +869,10 @@ public class SortingDemo {
     }
     
     private static void buscarBinariaCitas(Appointment[] citasOrdenadas) {
-        System.out.println("\n🔍 BÚSQUEDA BINARIA POR FECHA-HORA");
+        System.out.println("\nBÚSQUEDA BINARIA POR FECHA-HORA");
         System.out.println("-".repeat(40));
         
-        System.out.println("📅 Formato de fecha: AAAA-MM-DDTHH:MM:SS");
+        System.out.println("Formato de fecha: AAAA-MM-DDTHH:MM:SS");
         System.out.println("   Ejemplo: 2024-03-15T09:30:00");
         System.out.print("\nIngrese fecha-hora a buscar: ");
         String fechaStr = scanner.nextLine().trim();
@@ -904,40 +883,38 @@ public class SortingDemo {
             
             // Validar que el arreglo está ordenado
             if (!ArrayValidator.isSorted(citasOrdenadas)) {
-                System.out.println("⚠ El arreglo no está ordenado. Ordenando...");
+                System.out.println("El arreglo no está ordenado. Ordenando...");
                 Arrays.sort(citasOrdenadas);
             }
             
             int posicion = ArraySearch.binarySearch(citasOrdenadas, busqueda);
             
             if (posicion != -1) {
-                System.out.println("\n✅ CITA ENCONTRADA:");
+                System.out.println("\nCITA ENCONTRADA:");
                 System.out.println("   Índice: " + posicion);
                 System.out.println("   ID: " + citasOrdenadas[posicion].getId());
                 System.out.println("   Apellido: " + citasOrdenadas[posicion].getApellido());
                 System.out.println("   Fecha: " + citasOrdenadas[posicion].getFechaHora());
             } else {
-                System.out.println("\n❌ Cita no encontrada para la fecha: " + fechaStr);
+                System.out.println("\nCita no encontrada para la fecha: " + fechaStr);
                 
                 // Sugerir fechas cercanas
                 sugerirFechasCercanas(citasOrdenadas, busqueda);
             }
             
         } catch (Exception e) {
-            System.out.println("❌ Error: Formato de fecha inválido o error en búsqueda");
+            System.out.println("Error: Formato de fecha inválido o error en búsqueda");
         }
         
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void buscarRangoCitas(Appointment[] citasOrdenadas) {
-        System.out.println("\n📅 BÚSQUEDA EN RANGO DE FECHAS");
+        System.out.println("\nBÚSQUEDA EN RANGO DE FECHAS");
         System.out.println("-".repeat(40));
         
         DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
         
-        System.out.println("📅 Formato: AAAA-MM-DDTHH:MM:SS");
+        System.out.println("Formato: AAAA-MM-DDTHH:MM:SS");
         
         try {
             System.out.print("\nIngrese fecha INICIAL: ");
@@ -949,7 +926,7 @@ public class SortingDemo {
             LocalDateTime fin = LocalDateTime.parse(finStr, formatter);
             
             if (inicio.isAfter(fin)) {
-                System.out.println("⚠ Advertencia: Fecha inicial es posterior a la final");
+                System.out.println("Advertencia: Fecha inicial es posterior a la final");
                 System.out.print("¿Invertir el orden? (s/n): ");
                 String respuesta = scanner.nextLine().trim().toLowerCase();
                 if (respuesta.equals("s")) {
@@ -962,14 +939,14 @@ public class SortingDemo {
             List<Appointment> resultados = ArraySearch.findAppointmentsInRange(
                 citasOrdenadas, inicio, fin);
             
-            System.out.println("\n🔍 RESULTADOS DEL RANGO:");
+            System.out.println("\nRESULTADOS DEL RANGO:");
             System.out.println("   Desde: " + inicio.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
             System.out.println("   Hasta: " + fin.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
             
             if (resultados.isEmpty()) {
-                System.out.println("\n❌ No se encontraron citas en ese rango");
+                System.out.println("\nNo se encontraron citas en ese rango");
             } else {
-                System.out.println("\n✅ " + resultados.size() + " citas encontradas:");
+                System.out.println("\n" + resultados.size() + " citas encontradas:");
                 System.out.println("┌─────┬────────────┬────────────┬─────────────────────────┐");
                 System.out.println("│ No. │ ID         │ Apellido   │ Fecha-Hora              │");
                 System.out.println("├─────┼────────────┼────────────┼─────────────────────────┤");
@@ -986,18 +963,16 @@ public class SortingDemo {
             }
             
         } catch (DateTimeParseException e) {
-            System.out.println("❌ Error: Formato de fecha inválido");
+            System.out.println("Error: Formato de fecha inválido");
         }
         
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void mostrarLimitesCitas(Appointment[] citasOrdenadas) {
-        System.out.println("\n⬇️⬆️  LÍMITES INFERIOR/SUPERIOR DE UNA FECHA");
+        System.out.println("\nLÍMITES INFERIOR/SUPERIOR DE UNA FECHA");
         System.out.println("-".repeat(40));
         
-        System.out.println("📅 Formato: AAAA-MM-DDTHH:MM:SS");
+        System.out.println("Formato: AAAA-MM-DDTHH:MM:SS");
         System.out.print("\nIngrese fecha: ");
         String fechaStr = scanner.nextLine().trim();
         
@@ -1007,40 +982,38 @@ public class SortingDemo {
             int lower = ArraySearch.lowerBound(citasOrdenadas, busqueda);
             int upper = ArraySearch.upperBound(citasOrdenadas, busqueda);
             
-            System.out.println("\n📊 RESULTADOS PARA: " + fechaStr);
+            System.out.println("\nRESULTADOS PARA: " + fechaStr);
             System.out.println("   Lower Bound (primera ocurrencia o donde debería estar): " + 
                 (lower != -1 ? lower : "No encontrado"));
             System.out.println("   Upper Bound (última ocurrencia): " + 
                 (upper != -1 ? upper : "No encontrado"));
             
             if (lower != -1) {
-                System.out.println("\n📅 Elemento en Lower Bound:");
+                System.out.println("\nElemento en Lower Bound:");
                 System.out.println("   " + citasOrdenadas[lower].toString());
             }
             
             if (upper != -1 && upper != lower) {
-                System.out.println("\n📅 Elemento en Upper Bound:");
+                System.out.println("\nElemento en Upper Bound:");
                 System.out.println("   " + citasOrdenadas[upper].toString());
             }
             
             if (lower == -1 && upper == -1) {
-                System.out.println("\n⚠ La fecha no existe en el arreglo");
+                System.out.println("\nLa fecha no existe en el arreglo");
                 sugerirFechasCercanas(citasOrdenadas, busqueda);
             }
             
         } catch (Exception e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
         
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void compararLimitesCitas(Appointment[] citasOrdenadas) {
-        System.out.println("\n📊 COMPARACIÓN LOWER/UPPER BOUND");
+        System.out.println("\nCOMPARACIÓN LOWER/UPPER BOUND");
         System.out.println("-".repeat(40));
         
-        System.out.println("📅 Formato: AAAA-MM-DDTHH:MM:SS");
+        System.out.println("Formato: AAAA-MM-DDTHH:MM:SS");
         System.out.print("\nIngrese fecha: ");
         String fechaStr = scanner.nextLine().trim();
         
@@ -1052,7 +1025,7 @@ public class SortingDemo {
             int lower = ArraySearch.lowerBound(citasOrdenadas, busqueda);
             int upper = ArraySearch.upperBound(citasOrdenadas, busqueda);
             
-            System.out.println("\n🔍 COMPARACIÓN DE MÉTODOS:");
+            System.out.println("\nCOMPARACIÓN DE MÉTODOS:");
             System.out.println("┌────────────────────┬──────────┬─────────────────────────────┐");
             System.out.println("│ Método             │ Índice   │ Significado                 │");
             System.out.println("├────────────────────┼──────────┼─────────────────────────────┤");
@@ -1068,17 +1041,15 @@ public class SortingDemo {
             System.out.println("└────────────────────┴──────────┴─────────────────────────────┘");
             
             if (lower != -1 && upper != -1 && lower != upper) {
-                System.out.println("\n📈 RANGO DE DUPLICADOS:");
+                System.out.println("\nRANGO DE DUPLICADOS:");
                 System.out.println("   Hay " + (upper - lower + 1) + " citas con la misma fecha");
                 System.out.println("   Índices: " + lower + " a " + upper);
             }
             
         } catch (Exception e) {
-            System.out.println("❌ Error: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
         
-        System.out.println("\nPresione Enter para continuar...");
-        scanner.nextLine();
     }
     
     private static void sugerirFechasCercanas(Appointment[] citas, Appointment busqueda) {
@@ -1086,7 +1057,7 @@ public class SortingDemo {
         int posicionInsercion = -Arrays.binarySearch(citas, busqueda) - 1;
         
         if (posicionInsercion > 0 && posicionInsercion <= citas.length) {
-            System.out.println("\n💡 FECHAS CERCANAS DISPONIBLES:");
+            System.out.println("\nFECHAS CERCANAS DISPONIBLES:");
             
             // Mostrar fechas anteriores
             if (posicionInsercion > 0) {
@@ -1099,7 +1070,4 @@ public class SortingDemo {
             }
         }
     }
-    // Nota: Los métodos para citas e inventario (submenuBusquedasCitas, 
-    // submenuBusquedasInventario, etc.) permanecen igual que antes
-    // Solo se muestran aquí los cambios relacionados con pacientes
 }
